@@ -1,0 +1,86 @@
+.fullVerifyEmail {
+    background-image: url(../images/background/bgLogin.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.boxVerifyEmail {
+    width: 350px;
+    height: auto;
+    background: #1B2A3B;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.boxVerifyEmail .boxVerifyEmail__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.boxVerifyEmail .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.boxVerifyEmail .btn:hover {
+    filter: brightness(0.8);
+    transition: all 0.6s;
+}
+.boxVerifyEmail .form__btn {
+    width: 100%;
+}
+.boxVerifyEmail .btn {
+    width: 100%;
+    border: none;
+    color : #FFF;
+    font-weight: 700;
+    border-radius: 8px;
+    margin: 0px 0px 7.5px 0px;
+    transition: all 0.6s;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    position: relative;
+    padding: 15px;
+}
+.boxVerifyEmail .confirm {
+    background-color: #148DFD;
+}
+.boxVerifyEmail .login {
+    background-color: #D8143C;
+}
+.boxVerifyEmail .support {
+    background-color: #1182A2;
+}
+.boxVerifyEmail .form__boxNote {
+    width: 100%;
+    margin: 25px 0px;
+}
+.boxVerifyEmail .boxNote__text {
+    color : #FFF;
+    font-weight: 700;
+    text-align: center;
+    line-height: 20px;
+}
+.boxVerifyEmail .form__boxSuccess {
+    background-color: #06c306;
+    height: auto;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color : #FFF;
+    text-align: center;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+}

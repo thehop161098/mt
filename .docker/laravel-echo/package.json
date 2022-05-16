@@ -1,0 +1,21 @@
+{
+    "name": "laravel_echo_server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "ethers": "^4.0.20",
+        "ioredis": "^4.19.2",
+        "laravel-echo-server": "^1.6.2",
+        "moment": "^2.29.1",
+        "mysql": "^2.18.1",
+        "mysql2": "^2.3.3",
+        "node-fetch": "^2.6.1"
+    }
+}

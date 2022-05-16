@@ -1,0 +1,290 @@
+/* VERIFY GOOGLE */
+.fullVerifyGoogle {
+    background-image: url(../images//background/bgLogin.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxVerifyGoogle {
+    width: 350px;
+    height: auto;
+    background: #1B2A3B;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 15px 15px 15px;
+}
+.boxVerifyGoogle .boxVerifyGoogle__form {
+    width: 100%;
+}
+.boxVerifyGoogle .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.boxVerifyGoogle .btn:hover {
+    filter: brightness(0.8);
+    transition: all 0.6s;
+}
+.boxVerifyGoogle .btn {
+    width: 100%;
+    border: none;
+    color : #FFF;
+    font-weight: 700;
+    border-radius: 8px;
+    margin: 0px 0px 10px 0px;
+    transition: all 0.6s;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    position: relative;
+    padding: 15px;
+}
+.boxVerifyGoogle .confirm {
+    background-color: #148DFD;
+    margin: 20px 0px 10px 0px;
+}
+.boxVerifyGoogle .login {
+    background-color: #D8143C;
+}
+.boxVerifyGoogle .support {
+    background-color: #1182A2;
+}
+.boxVerifyGoogle .form__boxNote {
+    width: 300px;
+    margin: 25px 0px 50px 0px;
+}
+.boxVerifyGoogle .boxNote__text {
+    color : #FFF;
+    font-weight: 700;
+    text-align: center;
+}
+.boxVerifyGoogle .boxInput__required {
+    color: #D8143C;
+    padding: 0px 0px 0px 2.5px;
+}
+.boxVerifyGoogle .form__boxNote {
+    width: 300px;
+    margin: 25px 0px 100px 0px;
+}
+.boxVerifyGoogle .boxNote__text {
+    color : #FFF;
+    font-weight: 700;
+    text-align: center;
+}
+.boxVerifyGoogle .form__error {
+    background-color: #D8143C;
+    margin: 0px 0px 10px 0px;
+    padding: 10px 0px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.boxVerifyGoogle .error__text {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #FFF;
+    padding: 0px 15px;
+    line-height: 20px;
+    text-align: center;
+}
+.boxVerifyGoogle .form__boxInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+    padding: 5px;
+    margin : 0px 0px 5px 0px;
+}
+.boxVerifyGoogle .boxInput__label {
+    color : #FFF;
+    font-weight: 700;
+    margin : 0px 0px 15px 0px;
+}
+.boxVerifyGoogle .boxInput__listInput {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.boxVerifyGoogle .listInput__item {
+    background-color: #293A4E;
+    width: calc(100% / 6 - 10px);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.boxVerifyGoogle .item__input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color : #FFF;
+    font-weight: 600;
+    text-align: center;
+}
+.boxVerifyGoogle .boxInput__input::placeholder {
+    color : #888;
+}
+
+
+/* SUPPORT */
+
+.fullSupport {
+    background-image: url(../images//background/bgLogin.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxSupport {
+    width: 350px;
+    height: auto;
+    background: #1B2A3B;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 15px 15px 15px;
+}
+.boxSupport .boxSupport__form {
+    width: 100%;
+}
+.boxSupport .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.boxSupport .btn:hover {
+    filter: brightness(0.8);
+    transition: all 0.6s;
+}
+.boxSupport .btn {
+    width: 100%;
+    border: none;
+    color : #FFF;
+    font-weight: 700;
+    border-radius: 8px;
+    margin: 0px 0px 10px 0px;
+    transition: all 0.6s;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    position: relative;
+    padding: 15px;
+}
+.boxSupport .confirm {
+    background-color: #148DFD;
+}
+.boxSupport .login {
+    background-color: #D8143C;
+}
+.boxSupport .form__boxNote {
+    width: 300px;
+    margin: 25px 0px 50px 0px;
+}
+.boxSupport .boxNote__text {
+    color : #FFF;
+    font-weight: 700;
+    text-align: center;
+}
+.boxSupport .boxInput__required {
+    color: #D8143C;
+    padding: 0px 0px 0px 2.5px;
+}
+.boxSupport .form__boxNote {
+    width: 300px;
+    margin: 25px 0px 100px 0px;
+}
+.boxSupport .boxNote__text {
+    color : #FFF;
+    font-weight: 700;
+    text-align: center;
+}
+.boxSupport .form__error {
+    background-color: #D8143C;
+    margin: 0px 0px 10px 0px;
+    padding: 10px 0px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.boxSupport .error__text {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #FFF;
+    padding: 0px 15px;
+    line-height: 20px;
+    text-align: center;
+}
+.boxSupport .form__boxInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+    padding: 5px;
+    margin : 0px 0px 5px 0px;
+}
+.boxSupport .boxInput__listInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.boxSupport .listInput__item {
+    background-color: #293A4E;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0px 0px 5px 0px;
+}
+.boxSupport .item__label {
+    color: #FFF;
+    font-weight: 700;
+    margin: 0px 0px 15px 0px;
+}
+.boxSupport .item__input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color : #FFF;
+    font-weight: 600;
+    padding: 0px;
+}
+.boxSupport .item__inputContent {
+    width: 100% !important;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color : #FFF;
+    font-weight: 600;
+    padding: 0px;
+    line-height: 20px;
+    max-height: 200px;
+}
+.boxSupport .boxInput__input::placeholder {
+    color : #888;
+}

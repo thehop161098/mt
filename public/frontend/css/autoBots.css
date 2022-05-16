@@ -1,0 +1,268 @@
+#autobots {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100vh - 70px);
+}
+
+.pageAutoBots .title {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    width: 100%;
+}
+
+.pageAutoBots .title__text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.pageAutoBots .content__listPackages {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.pageAutoBots .listPackages__item {
+    width: calc(100% / 3);
+    padding: 0px 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all linear;
+    margin: 0px 0px 25px 0px;
+}
+
+.pageAutoBots .listPackages__item.active .item__info {
+    border: 2px solid #5AA62B;
+}
+
+.pageAutoBots .item__boxImg {
+    width: 125px;
+    height: 100px;
+    border-radius: 100%;
+    background: #1B2A3B;
+    margin: 0px 0px -20px 0px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageAutoBots .item__info {
+    background: #293A4E;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    border-radius: 25px;
+    padding: 50px 20px 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid #293A4E;
+}
+
+.pageAutoBots .boxImg__img {
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+}
+
+.pageAutoBots .info__name {
+    padding: 0px 0px 30px 0px;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.pageAutoBots .info__price {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageAutoBots .price__unit {
+    color: #5AA62B;
+    font-size: 1.25rem;
+    margin: 0px 5px 0px -15px;
+    font-weight: 700;
+}
+
+.pageAutoBots .price__number {
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.pageAutoBots .info__dayReceive {
+    width: 100%;
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pageAutoBots .dayReceive__item {
+    border: 2px solid #FFF;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.pageAutoBots .dayReceive__item.active {
+    background: #5AA62B;
+}
+
+.pageAutoBots .info__profit {
+    width: 100%;
+    padding: 0px 0px 25px 0px;
+}
+
+.pageAutoBots .profit__item {
+    background: transparent;
+    text-align: left;
+    overflow: hidden;
+}
+
+.pageAutoBots .listProfit__text {
+    color: #FFF;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+}
+
+.pageAutoBots .listProfit__text span {
+    color: #5AA62B;
+    font-weight: bold;
+}
+
+.pageAutoBots .info__buy {
+    width: 100%;
+}
+
+.pageAutoBots .buy__btn {
+    background: #1B2A3B;
+    height: 50px;
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: 700;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    transition: 0.3s all linear;
+}
+
+.pageAutoBots .buy__btn span {
+    font-size: 1.0rem;
+}
+
+.pageAutoBots .buy__btn:hover, .pageAutoBots .buy__btn.active {
+    background: #5AA62B;
+}
+
+.pageAutoBots .buy__btn:disabled {
+    background: #5AA62B;
+    opacity: 0.5;
+}
+
+.modalBuyAutoBots {
+    width: 450px;
+}
+
+.modalBuyAutoBots .modalBuyAutoBots__boxContent {
+    background-color: #1B2A3B;
+    height: auto;
+    border-radius: 10px;
+}
+
+.modalBuyAutoBots .boxContent__title {
+    height: 60px;
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    position: relative;
+}
+
+.modalBuyAutoBots .title__text {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.modalBuyAutoBots .title__btnClose {
+    position: absolute;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalBuyAutoBots .btnClose__img {
+    width: 20px;
+    height: 20px;
+}
+
+.modalBuyAutoBots .boxContent__form {
+    padding: 20px 20px 10px 20px;
+}
+
+.modalBuyAutoBots .note__text {
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.modalBuyAutoBots .form__btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalBuyAutoBots .btn__text {
+    width: calc(100% / 2 - 5px);
+    margin: 25px 0px 5px 0px;
+    height: 45px;
+    font-size: 1.1rem;
+    color: #FFF;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+}
+
+.modalBuyAutoBots #btnRefuse {
+    background: #AD342A;
+}
+
+.modalBuyAutoBots #btnConfirm {
+    background: #5AA62B;
+}

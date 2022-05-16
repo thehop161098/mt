@@ -1,0 +1,1910 @@
+@media screen and (min-width: 1824px) {
+    .pageAutoBots .listPackages__item {
+        width: calc(100% / 4);
+    }
+}
+@media screen and (min-width: 1200px) {
+    .sticky {
+        position: relative;
+        transition: all 0.8s;
+    }
+    .contentSticky {
+        padding : 0px;
+    }
+    #trading .boxResult__value {
+        padding: 10px;
+        min-width: 125px;
+    }
+    #trading .value__number {
+        font-size: 0.85rem;
+    }
+    .chartShowHiddenMB {
+        display : none;
+    }
+}
+/* IPAD PRO + IPAD XOAY NGANG */
+@media screen and (max-width: 1200px) {
+    html {
+        scroll-behavior: smooth;
+    }
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+    .infoTabNavigation__header {
+        /*bottom: 0;*/
+        top : inherit;
+    }
+    .blockDashboardAmount {
+        margin: 10px 0px 0px 0px;
+    }
+    .blockDashboardAmount .info__btn {
+        width: 100%;
+    }
+    .blockDashboardAmount .btn__itemBtn {
+        margin-bottom: 10px;
+    }
+    .fullWeb {
+        overflow: auto;
+    }
+    .infoTabNavigation  {
+        height: auto;
+    }
+    .infoTabNavigation__content {
+        height: auto;
+    }
+    .pageTrading__boxShowChat {
+        top: 80px;
+        position: fixed;
+        z-index: 12;
+        right : 15px;
+    }
+    #history .content,
+    #dashboard .content {
+        padding: 15px 15px 70px 15px;
+    }
+    .infoTabNavigation__header .tool__profile {
+        display: none;
+    }
+    #policy .title {
+        width: 100%;
+    }
+    .warningWeb {
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .warningWeb .warningWeb__content {
+        padding: 15px;
+    }
+    #trading .chatActive {
+        position: fixed;
+        top : 0px;
+        width: 100%;
+        z-index: 100;
+        opacity: 1;
+        height: 100%;
+    }
+    #trading .boxChatActive {
+        height: 100%;
+        background-color: #1B2A3B;
+        padding: 10px 15px 55px 15px;
+    }
+    .pageTrading__chat .chat__title {
+        width: 100%;
+        position: static;
+        padding: 0px 15px;
+    }
+    .pageTrading__chat .name__text {
+        text-transform: capitalize;
+    }
+    .pageTrading__chat .chat__boxChat {
+        margin: 0px;
+        padding: 15px 0px;
+        color : #FFF;
+    }
+    .toogleChatActive {
+        position: fixed;
+        top : calc((50px - 10px) / 2);
+        z-index: 101;
+    }
+    .modalBalance, .modalWin, .modalLose {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        transform: translate(0% ,0%) scale(0.75);
+    }
+    .modalWin__boxContent {
+        width: 350px;
+    }
+    .avatar__verifyCheck {
+        left : -1px;
+    }
+    .luckyWheelWeb .luckywheel__form {
+        display: none;
+    }
+    .luckyWheelWeb {
+        margin: 0px;
+    }
+    .luckywheel {
+        top : unset;
+        left : unset;
+        transform: scale(0.8);
+    }
+    .pageAutoBots .listPackages__item {
+        width: calc(100% / 2);
+    }
+    .pageAutoBots .listPackages__item:hover {
+        transform: scale(1.0);
+    }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .tabNavigation {
+        display: none;
+    }
+    .infoTabNavigation {
+        width: 100%;
+    }
+    .infoTabNavigation__header {
+        justify-content: flex-end;
+        z-index: 12;
+    }
+    #history .title, #dashboard .title, #wallet .title, #agency .title, #convert .title, #profile .title, #kyc .title {
+        width: 100%;
+        position: static;
+    }
+    .infoTabNavigation__header .header__logo {
+        display: none;
+    }
+    .infoTabNavigation__header .tool__profile {
+        display: none;
+    }
+    .infoTabNavigation__header .tool__changeWallet {
+        margin: 0px;
+    }
+    .infoTabNavigation__header .changeWallet__walletSelect {
+        padding: 0px 5px 0px 10px;
+    }
+    .infoTabNavigation__header .walletSelect__infoWallet {
+        padding: 0px 7.5px 0px 0px;
+    }
+    .infoTabNavigation__header .changeWallet__listWallet {
+        right: 5px;
+    }
+    .pageTrading__trading {
+        height: auto;
+        overflow: scroll;
+    }
+    .pageTrading__trading .listResult__blockResult:first-child {
+        margin: 25px 0px 10px 0px;
+    }
+    .pageTrading__trading .listResult__blockResult {
+        max-width: 100px;
+        justify-content: center;
+        margin: 0px 0px 10px 0px;
+    }
+    .pageTrading__trading .blockResult__item {
+        width: 16px;
+        height: 16px;
+        border-radius: 8px;
+    }
+    .pageTrading__trading .trading__content {
+        padding: 0px 10px;
+        height: auto;
+        overflow: hidden;
+    }
+    .pageTrading__trading .trading__bet {
+        flex-direction: column;
+        position: relative;
+        z-index: 10;
+        height: 300px;
+        justify-content: center;
+    }
+    .pageTrading__trading .bet__blockAmount {
+        width: 100%;
+        margin: -15px 0px 10px 0px;
+        height: 95px;
+        padding: 10px 10px 10px 20px;
+    }
+    .pageTrading__trading .bet__blockSelectBet {
+        width: 100%;
+        height: auto;
+    }
+    .pageTrading__trading .blockSelectBet__listSelect {
+        height: 95px;
+    }
+    .pageTrading__trading .blockSelectBet__infoTrans {
+        height: 95px;
+    }
+    .pageTrading__trading .infoTrans__profit {
+        padding: 5px 0px;
+    }
+    .pageTrading__trading .blockAmount__form {
+        width: 100%;
+    }
+    .pageTrading__trading .form__boxInput {
+        width: calc(100% - 425px - 30px);
+    }
+    .pageTrading__trading .form__boxSelectAmount {
+        width: 425px;
+    }
+    .pageTrading__trading .boxSelectAmount__item {
+        width: 60px;
+        height: 60px;
+    }
+    .pageTrading__trading .chartTrading__listResult {
+        width: 100px;
+    }
+    .pageTrading__trading .trading__title {
+        width: 100%;
+        padding: 0px 60px 0px 15px;
+    }
+    #trading .pageTrading__cbShowChat:checked~.pageTrading__trading .trading__title {
+        width: calc(100% - 300px);
+    }
+    .pageTrading__trading .chartTrading__chart {
+        height: 750px;
+        background-size: 100%;
+        background-position: center;
+    }
+    .pageDashboard .blockDashboardInfo {
+        flex-direction: column;
+    }
+    #dashboard .blockDashboardInfo__totalMoney {
+        width: 100%;
+    }
+    #dashboard .blockDashboardInfo__totalResult {
+        width: 100%;
+    }
+    #exchangeWallet .nameAccount__boxUnit {
+        min-width: 30px;
+        min-height: 30px;
+    }
+    #profile .avatar__tool {
+        bottom: 0px;
+        height: 30px;
+        opacity: 1;
+    }
+    .blockDashboardAmount__info {
+        flex-wrap: wrap;
+    }
+    .blockDashboardAmount .info__item {
+        width: calc(100% / 3 - 7.5px);
+        margin: 0px 0px 10px 0px;
+    }
+    .blockDashboardAmount .info__btn {
+        margin: 0px 0px 10px 0px;
+        width: 100%;
+        flex-direction: row;
+    }
+    .blockDashboardAmount .btn__itemBtn, .blockDashboardAmount .btn__itemLink {
+        margin: 0px;
+        width: calc(100% / 2 - 10px);
+    }
+    .pageTrading__trading .trading__title {
+        position: relative;
+    }
+    #trading .item__boxResult {
+        padding: 5px 0px 10px 0px;
+    }
+    #trading .boxResult__value {
+        margin: 0px;
+        padding: 10px 5px;
+        min-width: calc(100% /4 - 20px);
+    }
+    #trading .item__boxResult {
+        justify-content: space-between;
+    }
+    .chartShowHiddenMB {
+        display : none;
+    }
+}
+/* IPAD PRO */
+@media screen and (width: 1024px) {
+    #history .title, #dashboard .title, #wallet .title, #agency .title, #convert .title, #profile .title, #kyc .title {
+        width: 100%;
+        position: static;
+    }
+    .infoTabNavigation__header {
+        justify-content: flex-end;
+        z-index: 12;
+    }
+    .infoTabNavigation__header .header__logo {
+        display: none;
+    }
+    .infoTabNavigation__header .tool__changeWallet {
+        margin: 0px;
+    }
+    .infoTabNavigation__header .changeWallet__walletSelect {
+        padding: 0px 5px 0px 10px;
+    }
+    .infoTabNavigation__header .walletSelect__infoWallet {
+        padding: 0px 7.5px 0px 0px;
+    }
+    .infoTabNavigation__header .changeWallet__listWallet {
+        right: 5px;
+    }
+    .pageTrading__trading .listResult__blockResult:first-child {
+        margin: 25px 0px 10px 0px;
+    }
+    .pageTrading__trading .trading__title {
+        width: 100%;
+    }
+    .pageTrading__trading .trading__title {
+        padding: 0px 60px 0px 20px;
+    }
+    #exchangeWallet .nameAccount__boxUnit {
+        min-width: 30px;
+        min-height: 30px;
+    }
+    .chartShowHiddenMB {
+        display : none;
+    }
+}
+@media screen and (max-width: 992px) {
+    #trading .item__boxResult,
+    .chartTrading__listResult,
+    .pageTrading__trading .blockSelectBet__infoTrans {
+        display: none;
+    }
+    .pageTrading__boxShowChat {
+        display: none;
+    }
+}
+/* DT PLUS XOAY NGANG */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    html, body {
+        overflow: auto;
+    }
+    #history .title, #dashboard .title, #wallet .title, #agency .title, #convert .title, #profile .title, #kyc .title {
+        width: 100%;
+        position: static;
+        padding: 15px;
+    }
+    .tabNavigation {
+        display: none;
+    }
+    .infoTabNavigation {
+        width: 100%;
+    }
+    .infoTabNavigation__header {
+        justify-content: flex-end;
+        z-index: 12;
+    }
+    .infoTabNavigation__header .header__logo {
+        display: none;
+    }
+    .infoTabNavigation__header .tool__profile {
+        display: none;
+    }
+    .infoTabNavigation__header .tool__changeWallet {
+        margin: 0px;
+    }
+    .infoTabNavigation__header .changeWallet__walletSelect {
+        padding: 0px 5px 0px 10px;
+    }
+    .infoTabNavigation__header .walletSelect__infoWallet {
+        padding: 0px 7.5px 0px 0px;
+    }
+    .infoTabNavigation__header .changeWallet__listWallet {
+        right: 5px;
+    }
+    .pageTrading__trading .trading__content {
+        padding: 0px 15px;
+        height: auto;
+        overflow: hidden;
+    }
+    .pageTrading__trading .trading__bet {
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        margin: 0px 0px 15px 0px;
+    }
+    .pageTrading__trading .bet__blockAmount {
+        width: 100%;
+        margin: -15px 0px 10px 0px;
+        height: 95px;
+        padding: 10px 10px 10px 20px;
+    }
+    .pageTrading__trading .bet__blockSelectBet {
+        width: 100%;
+        height: 100px;
+    }
+    .pageTrading__trading .trading__bet {
+        height: 300px;
+        justify-content: center;
+    }
+    .pageTrading__trading .content__chartTrading {
+        flex-direction: column-reverse;
+    }
+    .pageTrading__trading .chartTrading__listResult {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #293A4E;
+        padding: 15px 50px;
+        border-radius: 8px;
+    }
+    .pageTrading__trading .chartTrading__chart {
+        width: 100%;
+        padding: 0px;
+    }
+    .pageTrading__trading .bet__blockAmount {
+        height: 90px;
+        margin: 0px 0px 10px 0px;
+    }
+    .pageTrading__trading .bet__blockSelectBet {
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+    .pageTrading__trading .blockSelectBet__listSelect {
+        width: 100%;
+        height: 100px;
+    }
+    .pageTrading__trading .blockSelectBet__infoTrans {
+        width: 100%;
+        height: 90px;
+        margin: 0px 0px 15px 0px;
+    }
+    .pageTrading__trading .blockAmount__form {
+        width: 100%;
+    }
+    .pageTrading__trading .form__boxInput {
+        width: calc(100% - 425px - 30px);
+    }
+    .pageTrading__trading .form__boxSelectAmount {
+        width: 425px;
+    }
+    .pageTrading__trading .boxSelectAmount__item {
+        width: 60px;
+        height: 60px;
+    }
+    .pageTrading__trading .listResult__blockResult {
+        max-width: 90px;
+        justify-content: center;
+        margin: 0px 0px 10px 0px;
+    }
+    .pageTrading__trading .listResult__blockResult:first-child {
+        margin: 0px;
+    }
+    .pageTrading__trading .listResult__blockResult {
+        margin: 0px;
+    }
+    #trading .pageTrading__trading {
+        width: 100%;
+        overflow: scroll;
+        height: auto;
+    }
+    #trading .pageTrading__cbShowChat:checked~.pageTrading__trading {
+        width: 100%;
+    }
+    .pageTrading__trading .trading__title {
+        width: 100%;
+        padding: 0px 60px 0px 15px;
+    }
+    #trading .pageTrading__cbShowChat:checked~.pageTrading__trading .trading__title {
+        width: 100%;
+        padding: 0px 60px 0px 15px;
+    }
+    #trading .pageTrading__chat {
+        transition: all 0s;
+    }
+    #trading .pageTrading__cbShowChat:checked~.pageTrading__chat {
+        position: fixed;
+        right: 0px;
+        transition: all 0.2s;
+    }
+    .table-responsive {
+        border: 2px solid #394F68 !important;
+    }
+    .pageDashboard .blockDashboardInfo {
+        flex-direction: column;
+    }
+    #dashboard .blockDashboardInfo__totalMoney {
+        width: 100%;
+    }
+    #dashboard .blockDashboardInfo__totalResult {
+        width: 100%;
+    }
+    #exchangeWallet .nameAccount__boxUnit {
+        min-width: 30px;
+        min-height: 30px;
+    }
+    #convert .blockConvert {
+        flex-direction: column;
+    }
+    #convert .blockConvert__valueConvert {
+        width: 100%;
+    }
+    #convert .blockConvert__btnConvert {
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+    }
+    #agency .content {
+        flex-direction: column;
+        padding: 20px 20px 25px 20px;
+    }
+    #agency .content__blockRank {
+        width: 100%;
+    }
+    #agency .content__blockReferralCode {
+        width: 100%;
+        margin: 25px 0px 0px 0px;
+    }
+    #profile .content__blockInfoUser {
+        flex-direction: column;
+        padding: 25px 20px 40px 20px;
+    }
+    #profile .blockInfoUser__boxInfo {
+        width: 100%;
+        margin: 25px 0px 0px 0px;
+    }
+    #profile .avatar__tool {
+        bottom: 0px;
+        height: 30px;
+        opacity: 1;
+    }
+    #history .blockFilterHistory {
+        margin: 0px;
+        width: 100%;
+    }
+    .col-pr-12 {
+        width: calc(100% - 20px);
+    }
+    .col-pr-6 {
+        width: 50%;
+    }
+    #history .blockFilterHistory__btn {
+        margin: 0px 0px 15px 0px;
+    }
+    .blockDashboardAmount__info {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .blockDashboardAmount .info__item {
+        width: calc(100% / 3 - 7.5px);
+        margin: 0px 0px 10px 0px;
+    }
+    .blockDashboardAmount .info__item:nth-child(3n - 1) {
+        margin: 0px 10px 10px 10px;
+    }
+    .blockDashboardAmount .info__btn {
+        margin: 0px 0px 10px 0px;
+        width: 100%;
+        flex-direction: row;
+    }
+    .blockDashboardAmount .btn__itemBtn, .blockDashboardAmount .btn__itemLink {
+        margin: 0px;
+        width: calc(100% / 2 - 10px);
+    }
+    #trading .item__boxResult {
+        padding: 5px 0px 10px 0px;
+    }
+    #trading .boxResult__value {
+        margin: 0px;
+        padding: 10px 5px;
+        min-width: calc(100% /4 - 20px);
+    }
+    #trading .item__boxResult {
+        justify-content: space-between;
+    }
+    .pageTrading__trading .chartTrading__chart {
+        height: 500px;
+    }
+    .swiper-container {
+        width: 65%;
+        height: 300px;
+    }
+}
+/* IPAD */
+
+@media screen and (width: 768px) {
+    .tabNavigation {
+        display: none;
+    }
+    #history .title, #dashboard .title, #wallet .title, #convert .title, #agency .title, #profile .title, #kyc .title {
+        width: 100%;
+        position: static;
+        padding: 15px;
+    }
+    .infoTabNavigation {
+        width: 100%;
+    }
+    .infoTabNavigation__header {
+        justify-content: flex-end;
+        z-index: 12;
+    }
+    .content__item {
+        min-width: 150px;
+    }
+    .infoTabNavigation__header .header__logo {
+        display: none;
+    }
+    .infoTabNavigation__header .tool__profile {
+        display: none;
+    }
+    .infoTabNavigation__header .tool__changeWallet {
+        margin: 0px;
+    }
+    .infoTabNavigation__header .changeWallet__walletSelect {
+        padding: 0px 5px 0px 10px;
+    }
+    .infoTabNavigation__header .walletSelect__infoWallet {
+        padding: 0px 7.5px 0px 0px;
+    }
+    .infoTabNavigation__header .changeWallet__listWallet {
+        right: 5px;
+    }
+    .pageTrading__trading .trading__content {
+        padding: 0px 10px;
+        height: auto;
+        overflow: hidden;
+    }
+    .pageTrading__trading .trading__bet {
+        flex-direction: column;
+        position: relative;
+        z-index: 5;
+        height: 300px;
+        justify-content: center;
+        margin: 0px 0px 15px 0px;
+    }
+    .pageTrading__trading .bet__blockAmount {
+        width: 100%;
+        margin: -15px 0px 10px 0px;
+        height: 95px;
+        padding: 10px 10px 10px 20px;
+    }
+    .pageTrading__trading .bet__blockSelectBet {
+        width: 100%;
+        height: auto;
+    }
+    .pageTrading__trading .content__chartTrading {
+        flex-direction: column-reverse;
+    }
+    .pageTrading__trading .chartTrading__listResult {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #293A4E;
+        padding: 15px 50px;
+        border-radius: 8px;
+    }
+    .pageTrading__trading .listResult__blockResult:first-child {
+        margin: 0px;
+    }
+    .pageTrading__trading .listResult__blockResult {
+        margin: 0px;
+    }
+    .pageTrading__trading .chartTrading__chart {
+        width: 100%;
+        padding: 0px;
+        height: 500px;
+    }
+    .pageTrading__trading .bet__blockAmount {
+        height: 90px;
+        margin: 20px 0px 10px 0px;
+    }
+    .pageTrading__trading .bet__blockSelectBet {
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        margin: 0px 0px;
+    }
+    .pageTrading__trading .blockSelectBet__listSelect {
+        width: 100%;
+        height: 100px;
+    }
+    .pageTrading__trading .blockSelectBet__infoTrans {
+        width: 100%;
+        height: 90px;
+        margin: 0px 0px 15px 0px;
+    }
+    .pageTrading__trading .infoTrans__profit {
+        padding: 5px 0px 0px 0px;
+    }
+    .pageTrading__trading .blockAmount__form {
+        width: 100%;
+    }
+    .pageTrading__trading .form__boxInput {
+        width: calc(100% - 425px - 30px);
+    }
+    .pageTrading__trading .form__boxSelectAmount {
+        width: 425px;
+    }
+    .pageTrading__trading .boxSelectAmount__item {
+        width: 60px;
+        height: 60px;
+    }
+    .pageTrading__trading .listResult__blockResult {
+        max-width: 90px;
+        justify-content: center;
+        margin: 0px;
+    }
+    .pageTrading__trading .chartTrading__listResult {
+        width: 100%;
+        margin: 0px 0px 15px 0px;
+    }
+    #trading .pageTrading__trading {
+        width: 100%;
+        height: auto;
+        overflow: scroll;
+    }
+    #trading .pageTrading__cbShowChat:checked~.pageTrading__trading {
+        width: 100%;
+    }
+    .pageTrading__trading .trading__title {
+        width: 100%;
+        padding: 0px 60px 0px 15px;
+    }
+    #trading .pageTrading__cbShowChat:checked~.pageTrading__trading .trading__title {
+        width: 100%;
+        padding: 0px 60px 0px 15px;
+    }
+    #trading .pageTrading__chat {
+        transition: all 0s;
+    }
+    #trading .pageTrading__cbShowChat:checked~.pageTrading__chat {
+        position: fixed;
+        right: 0px;
+        transition: all 0.2s;
+    }
+    #exchangeWallet .nameAccount__boxUnit {
+        min-width: 30px;
+        min-height: 30px;
+    }
+    #convert .blockConvert {
+        flex-direction: column;
+    }
+    #convert .blockConvert__valueConvert {
+        width: 100%;
+    }
+    #convert .blockConvert__btnConvert {
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+    }
+    #agency .content {
+        flex-direction: column;
+    }
+    #agency .content__blockRank {
+        width: 100%;
+    }
+    #agency .content__blockReferralCode {
+        width: 100%;
+        margin: 25px 0px 0px 0px;
+    }
+    #profile .content__blockInfoUser {
+        flex-direction: column;
+    }
+    #profile .blockInfoUser__boxInfo {
+        width: 100%;
+        margin: 25px 0px 0px 0px;
+    }
+    #profile .avatar__tool {
+        bottom: 0px;
+        height: 30px;
+        opacity: 1;
+    }
+    .blockDashboardAmount__info {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .blockDashboardAmount .info__item {
+        width: calc(100% / 3 - 7.5px);
+        margin: 0px 0px 10px 0px;
+    }
+    .blockDashboardAmount .info__item:nth-child(3n - 1) {
+        margin: 0px 10px 10px 10px;
+    }
+    .form-search .blockFilterHistory__btn {
+        margin-top: 10px;
+    }
+    #trading .item__boxResult {
+        padding: 5px 0px 10px 0px;
+    }
+    #trading .boxResult__value {
+        margin: 0px;
+        padding: 10px 5px;
+        min-width: calc(100% /4 - 20px);
+    }
+    #trading .item__boxResult {
+        justify-content: space-between;
+    }
+}
+/* IPAD TRỞ XUỐNG */
+
+@media screen and (max-width: 768px) {
+    #history .title, #dashboard .title, #wallet .title, #agency .title, #convert .title, #profile .title, #kyc .title {
+        width: 100%;
+        position: static;
+        padding: 15px;
+    }
+    .infoTabNavigation__header {
+        justify-content: flex-end;
+        z-index: 12;
+    }
+    .infoTabNavigation__header .header__logo {
+        display: none;
+    }
+    .infoTabNavigation__header .tool__profile {
+        display: none;
+    }
+    .infoTabNavigation__header .tool__changeWallet {
+        margin: 0px;
+    }
+    .infoTabNavigation__header .changeWallet__walletSelect {
+        padding: 0px 5px 0px 10px;
+    }
+    .infoTabNavigation__header .walletSelect__infoWallet {
+        padding: 0px 7.5px 0px 0px;
+    }
+    .infoTabNavigation__header .changeWallet__listWallet {
+        right: 5px;
+    }
+    .block__content {
+        width: 100%;
+        height: auto;
+    }
+    .block__tabNavigation {
+        position: fixed;
+        bottom: 15px;
+        width: calc(100% - 30px);
+        align-items: unset;
+        left: 0;
+        right: 0;
+        margin: auto;
+        align-items: unset;
+        border-radius: 30px;
+        z-index: 999;
+    }
+    .tabNavigation__item {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+    }
+    .block__tabNavigation .boxImg__note {
+        display: none;
+    }
+    .block__content {
+        border-radius: 0px;
+    }
+    .block__content .content__blockContent {
+        flex-direction: column;
+        margin: 0px 0px 100px 0px;
+    }
+    .block__content .blockContent__info {
+        width: 100%;
+        height: 350px;
+        margin: 0px 0px 30px 0px;
+    }
+    .block__content .info__boxAvatar {
+        width: 150px;
+        height: 150px;
+    }
+    .block__content .boxAvatar__img {
+        width: 125px;
+        height: 125px;
+    }
+    .block__content .introduce__myIntroduce {
+        height: 100%;
+        padding: 20px;
+    }
+    .block__content .blockContent__introduce {
+        width: 100%;
+        height: auto;
+    }
+    .pageTrading__trading .item__boxContent {
+        flex-direction: row;
+    }
+    .pageTrading__trading .boxContent__value {
+        border-radius: 8px;
+    }
+    .content__item {
+        min-width: 150px;
+    }
+    .pageDashboard .blockDashboardInfo {
+        flex-direction: column;
+    }
+    #dashboard .blockDashboardInfo__totalMoney {
+        width: 100%;
+    }
+    #dashboard .blockDashboardInfo__totalResult {
+        width: 100%;
+    }
+    #exchangeWallet .nameAccount__boxUnit {
+        min-width: 30px;
+        min-height: 30px;
+    }
+    #agency .content {
+        flex-direction: column;
+    }
+    #agency .content__blockRank {
+        width: 100%;
+    }
+    #agency .content__blockReferralCode {
+        width: 100%;
+        margin: 25px 0px 0px 0px;
+    }
+    #profile .avatar__tool {
+        bottom: 0px;
+        height: 30px;
+        opacity: 1;
+    }
+    #profile .content__blockInfoUser {
+        flex-direction: column;
+    }
+    #profile .blockInfoUser__boxInfo {
+        width: 100%;
+        margin: 25px 0px 0px 0px;
+    }
+    .modalBalance, .modalWin, .modalLose {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        transform: translate(0% ,0%) scale(0.75);
+    }
+    .modalWin__boxContent {
+        width: 350px;
+    }
+    .pageAutoBots .listPackages__item {
+        width: 100%;
+    }
+    .modalBuyAutoBots {
+        width: calc(100% - 20px);
+    }
+}
+
+/* DT XOAY NGANG */
+@media screen and (min-width: 641px) and (max-width: 768px) {
+    html, body {
+        overflow: auto;
+    }
+    #history .title, #dashboard .title, #wallet .title, #agency .title, #convert .title, #profile .title, #kyc .title {
+        width: 100%;
+        position: static;
+        padding: 15px;
+        
+    }
+    .tabNavigation {
+        display: none;
+    }
+    .infoTabNavigation {
+        width: 100%;
+    }
+    .infoTabNavigation__header {
+        justify-content: flex-end;
+        z-index: 12;
+    }
+    .infoTabNavigation__header .header__logo {
+        display: none;
+    }
+    .infoTabNavigation__header .tool__profile {
+        display: none;
+    }
+    .infoTabNavigation__header .tool__changeWallet {
+        margin: 0px;
+    }
+    .infoTabNavigation__header .changeWallet__walletSelect {
+        padding: 0px 5px 0px 10px;
+    }
+    .infoTabNavigation__header .walletSelect__infoWallet {
+        padding: 0px 7.5px 0px 0px;
+    }
+    .infoTabNavigation__header .changeWallet__listWallet {
+        right: 5px;
+    }
+    #trading .pageTrading__trading {
+        width: 100%;
+        height: auto;
+        overflow: scroll;
+    }
+    .pageTrading__trading .trading__content {
+        padding: 0px 10px;
+        height: auto;
+        overflow: hidden;
+    }
+    .pageTrading__trading .trading__bet {
+        flex-direction: column;
+        position: relative;
+        z-index: 3;
+    }
+    .pageTrading__trading .bet__blockAmount {
+        width: 100%;
+        margin: -15px 0px 10px 0px;
+        height: 95px;
+        padding: 10px 10px 10px 20px;
+    }
+    .pageTrading__trading .bet__blockSelectBet {
+        width: 100%;
+        height: auto;
+    }
+    .pageTrading__trading .trading__bet {
+        height: 300px;
+        justify-content: center;
+        margin: 0px 0px 15px 0px;
+    }
+    .pageTrading__trading .content__chartTrading {
+        flex-direction: column-reverse;
+        padding: 0px 5px;
+        overflow: hidden;
+    }
+    .pageTrading__trading .chartTrading__listResult {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #293A4E;
+        padding: 15px 50px;
+        border-radius: 8px;
+    }
+    .pageTrading__trading .listResult__blockResult:first-child {
+        margin: 0px;
+    }
+    .pageTrading__trading .listResult__blockResult {
+        margin: 0px;
+    }
+    .pageTrading__trading .chartTrading__chart {
+        width: 100%;
+        padding: 0px;
+        height: 500px;
+    }
+    .pageTrading__trading .bet__blockAmount {
+        height: 90px;
+        margin: 20px 0px 10px 0px;
+    }
+    .pageTrading__trading .bet__blockSelectBet {
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+    .pageTrading__trading .blockSelectBet__listSelect {
+        width: 100%;
+        height: 90px;
+    }
+    .pageTrading__trading .blockSelectBet__infoTrans {
+        width: 100%;
+        height: 90px;
+        margin: 0px 0px 15px 0px;
+    }
+    .pageTrading__trading .blockAmount__form {
+        width: 100%;
+    }
+    .pageTrading__trading .form__boxInput {
+        width: calc(100% - 425px - 30px);
+    }
+    .pageTrading__trading .form__boxSelectAmount {
+        width: 425px;
+    }
+    .pageTrading__trading .boxSelectAmount__item {
+        width: 60px;
+        height: 60px;
+    }
+    .pageTrading__trading .listResult__blockResult {
+        max-width: 90px;
+        justify-content: center;
+        margin: 0px;
+    }
+    .pageTrading__trading .chartTrading__listResult {
+        width: 100%;
+        padding: 10px 50px;
+        margin: 10px 0px;
+    }
+    #trading .pageTrading__cbShowChat:checked~.pageTrading__trading {
+        width: 100%;
+    }
+    .pageTrading__trading .trading__title {
+        padding: 0px 60px 0px 20px;
+        width: 100%;
+        z-index: 4;
+    }
+    #trading .pageTrading__cbShowChat:checked~.pageTrading__trading .trading__title {
+        width: 100%;
+        padding: 0px 60px 0px 20px;
+    }
+    #trading .pageTrading__chat {
+        transition: all 0s;
+    }
+    #trading .pageTrading__cbShowChat:checked~.pageTrading__chat {
+        position: fixed;
+        right: 0px;
+        transition: all 0.2s;
+    }
+    .table-responsive {
+        border: 2px solid #394F68 !important;
+    }
+    .content__item {
+        min-width: 150px;
+    }
+    .pageDashboard .blockDashboardInfo {
+        flex-direction: column;
+    }
+    #dashboard .blockDashboardInfo__totalMoney {
+        width: 100%;
+    }
+    #dashboard .blockDashboardInfo__totalResult {
+        width: 100%;
+    }
+    #dashboard .totalResult__trade {
+        width: 100%;
+        margin: 0px 0px 15px 0px;
+    }
+    #dashboard .totalResult__listResult {
+        flex-direction: column;
+    }
+    #dashboard .listResult__item {
+        width: 100%;
+        margin: 0px 0px 10px 0px;
+    }
+    #mainWallet .header__balance {
+        width: 50%;
+    }
+    #mainWallet .header__tool {
+        display: none;
+    }
+    #mainWallet .listCoin__item {
+        height: auto;
+        flex-flow: row wrap;
+        align-items: center;
+        padding: 20px 10px;
+        border: 0.25px solid #394F68;
+    }
+    #mainWallet .item__nameCoin {
+        width: 50%;
+        justify-content: flex-start;
+    }
+    #mainWallet .item__balance {
+        width: 50%;
+        justify-content: flex-end;
+    }
+    #mainWallet .item__listTool {
+        width: 100%;
+        justify-content: flex-end;
+        padding: 0px;
+        margin: 15px 0px 0px 0px;
+    }
+    #mainWallet .listCoin__item:first-child, #mainWallet .listCoin__item:last-child {
+        border-radius: 0px;
+    }
+    #mainWallet .btnTool {
+        margin: 0px 2px;
+        padding: 2.5px 10px;
+    }
+    #wallet .modalDeposit, #wallet .modalWithdraw, #wallet .modalInternalTransfer, #modalUpgradeAgency .modalUpgradeAgency, #profile .modalChangePassword, #modalActiveGoogleStep1 .modalActiveGoogleStep1, #modalActiveGoogleStep2 .modalActiveGoogleStep2, #modalActiveGoogleStep3 .modalActiveGoogleStep3 {
+        width: calc(100% - 20px);
+    }
+    #exchangeWallet .nameAccount__boxUnit {
+        min-width: 30px;
+        min-height: 30px;
+    }
+    #convert .blockConvert {
+        flex-direction: column;
+    }
+    #convert .blockConvert__valueConvert {
+        width: 100%;
+    }
+    #convert .blockConvert__btnConvert {
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+    }
+    #agency .content {
+        flex-direction: column;
+    }
+    #agency .content__blockRank {
+        width: 100%;
+    }
+    #agency .content__blockReferralCode {
+        width: 100%;
+        margin: 25px 0px 0px 0px;
+    }
+    #profile .avatar__tool {
+        bottom: 0px;
+        height: 30px;
+        opacity: 1;
+    }
+    #profile .content__blockInfoUser {
+        flex-direction: column;
+    }
+    #profile .blockInfoUser__boxInfo {
+        width: 100%;
+        margin: 25px 0px 0px 0px;
+    }
+    #profile .boxInfo__form {
+        flex-direction: column;
+    }
+    #profile .form__boxInput {
+        width: 100%;
+    }
+    #history .blockFilterHistory__date {
+        margin: 0px 0px 10px 0px;
+    }
+    #history .blockFilterHistory__btn {
+        margin: 0px 0px 15px 0px;
+    }
+    #profile .error__text {
+        padding: 0px 15px 0px 35px;
+    }
+    #profile .pageProfile .form__error {
+        right: 5px;
+        left: unset;
+        bottom: unset;
+        top: 2.5px;
+        min-width: 200px;
+        z-index: 2;
+        width: unset;
+    }
+    #profile .error__img {
+        margin: 0px;
+    }
+    .blockDashboardAmount__info {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .blockDashboardAmount .info__item {
+        width: calc(100% / 3 - 7.5px);
+        margin: 0px 0px 10px 0px;
+    }
+    .blockDashboardAmount .info__item:nth-child(3n - 1) {
+        margin: 0px 10px 10px 10px;
+    }
+    .blockDashboardAmount .info__btn {
+        margin: 0px 0px 10px 0px;
+        width: calc(100% / 3 - 7.5px);
+    }
+    .blockDashboardAmount .info__btn {
+        margin: 0px 0px 10px 0px;
+        width: 100%;
+        flex-direction: row;
+    }
+    .blockDashboardAmount .btn__itemBtn, .blockDashboardAmount .btn__itemLink {
+        margin: 0px;
+        width: calc(100% / 2 - 10px);
+    }
+    #trading .boxResult__value {
+        margin: 0px;
+        padding: 10px 5px;
+        min-width: calc(100% /4 - 20px);
+    }
+    #trading .item__boxResult {
+        justify-content: space-between;
+        padding: 5px 5px 10px 5px;
+    }
+    #kyc .content {
+        padding: 20px 20px 50px 20px;
+    }
+    .modalBalance, .modalWin, .modalLose {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        transform: translate(0% , 0%) scale(0.75) !important;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .modalWin__boxContent {
+        width: 350px;
+    }
+    .swiper-container {
+        width: 70%;
+        height: 300px;
+    }
+}
+/* IP 6/8 PLUS TRỞ XUỐNG */
+@media screen and (max-width: 640px) {
+    .boxLogin {
+        width: 320px;
+    }
+    .pageTrading__trading .trading__title {
+        position: relative;
+    }
+    .pageTrading__trading .trading__content {
+        height: auto;
+        padding: 0px 10px;
+        margin: 0px;
+        overflow: hidden;
+    }
+    .tabNavigation {
+        display: none;
+    }
+    .infoTabNavigation {
+        width: 100%;
+        height: auto;
+        overflow: auto;
+    }
+    .infoTabNavigation__content {
+        height: auto;
+    }
+    .chartTrading__chart {
+        background-size: 105%;
+        background-position: center;
+    }
+    #trading .pageTrading__trading {
+        width: 100%;
+        height: auto;
+        overflow: scroll;
+    }
+    .infoTabNavigation__header {
+        justify-content: flex-end;
+        z-index: 12;
+    }
+    .infoTabNavigation__header .header__logo {
+        display: none;
+    }
+    .infoTabNavigation__header .coinSelect__infoCoin .infoCoin__text {
+        display: none;
+    }
+    .infoTabNavigation__header .changeCoin__listCoin {
+        width: 175px;
+    }
+    .infoTabNavigation__header .coinSelect__infoCoin {
+        padding: 0px;
+        justify-content: flex-end;
+    }
+    .infoTabNavigation__header .tool__profile {
+        display: none;
+    }
+    .infoTabNavigation__header .tool__changeWallet {
+        margin: 0px;
+    }
+    .infoTabNavigation__header .changeWallet__walletSelect {
+        padding: 0px 5px 0px 10px;
+    }
+    .infoTabNavigation__header .walletSelect__infoWallet {
+        padding: 0px 7.5px 0px 0px;
+    }
+    .infoTabNavigation__header .changeWallet__listWallet {
+        right: 10px;
+        top : 45px;
+        width: 150px;
+    }
+    .pageTrading__trading .trading__title {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        padding: 10px 15px 0px 15px;
+    }
+    .pageTrading__trading .title__name {
+        margin: 0px 0px 10px 0px;
+    }
+    .pageTrading__trading .info__item {
+        margin: 0px;
+    }
+    .pageTrading__trading .type_txt {
+        display: none;
+    }
+    .pageTrading__trading .title__info {
+        width: 100%;
+        justify-content: space-between;
+    }
+    #trading .pageTrading__cbShowChat {
+        right: 12px;
+    }
+    .pageTrading__trading .item__number {
+        font-size: 1rem;
+    }
+    .infoTabNavigation__header .money__text {
+        font-size: 1rem;
+    }
+    .pageTrading__trading .chartTrading__listResult {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #293A4E;
+        padding: 10px;
+        border-radius: 8px;
+        margin: 0px 0px 10px 0px;
+    }
+    .pageTrading__trading .listResult__blockResult:first-child {
+        margin: 0px;
+    }
+    .pageTrading__trading .listResult__blockResult {
+        margin: 0px;
+        justify-content: center;
+    }
+    .pageTrading__trading .content__chartTrading {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    #trading .pageTrading__trading {
+        width: 100%;
+        height: auto;
+        overflow: scroll;
+    }
+    .pageTrading__trading .chartTrading__chart {
+        height: calc(100vh - 400px);
+        width: 105%;
+        padding: 0px;
+        margin: 0px 0px 0px -20px;
+    }
+    .pageTrading__trading .trading__bet {
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .pageTrading__trading .bet__blockAmount {
+        width: 100%;
+    }
+    .pageTrading__trading .bet__blockSelectBet {
+        width: 100%;
+        flex-direction: column-reverse;
+        height: auto;
+        margin: 10px 0px 0px 0px;
+    }
+    .pageTrading__trading .blockSelectBet__listSelect {
+        margin: 0px 0px 10px 0px;
+        height: 95px;
+        width: 100%;
+    }
+    .pageTrading__trading .bet__blockAmount {
+        padding: 0px 5px 0px 15px;
+    }
+    .pageTrading__trading .blockSelectBet__infoTrans {
+        height: 95px;
+        width: 100%;
+        margin: 0px 0px 10px 0px;
+    }
+    .pageTrading__trading .blockAmount__form {
+        width: 100%;
+    }
+    .pageTrading__trading .form__boxInput {
+        width: calc(100% - 150px - 10px);
+    }
+    #trading .pageTrading__cbShowChat:checked~.pageTrading__trading {
+        width: 100%;
+    }
+    #trading .pageTrading__cbShowChat:checked~.pageTrading__trading .trading__title {
+        width: 100%;
+        padding: 0px 5px 0px 10px;
+    }
+    #trading .pageTrading__chat {
+        transition: all 0s;
+    }
+    #trading .pageTrading__cbShowChat:checked~.pageTrading__chat {
+        position: fixed;
+        right: 0px;
+        transition: all 0.2s;
+        z-index: 9;
+    }
+    #trading .pageTrading__cbShowChat {
+        z-index: 11;
+    }
+    .table-responsive {
+        border: 2px solid #394F68 !important;
+    }
+    .pageDashboard .blockDashboardInfo {
+        flex-direction: column;
+    }
+    #dashboard .blockDashboardInfo__totalMoney {
+        width: 100%;
+    }
+    #dashboard .blockDashboardInfo__totalResult {
+        width: 100%;
+    }
+    #dashboard .totalResult__trade {
+        width: 100%;
+        margin: 0px 0px 15px 0px;
+    }
+    #dashboard .totalResult__listResult {
+        flex-direction: column;
+    }
+    #dashboard .listResult__item {
+        width: 100%;
+        margin: 0px 0px 10px 0px;
+    }
+    #dashboard .totalMoney__listItem {
+        flex-direction: column;
+    }
+    #dashboard .listItem__itemForm {
+        width: 100%;
+    }
+    #mainWallet .header__balance {
+        width: 50%;
+    }
+    #mainWallet .header__tool {
+        display: none;
+    }
+    #mainWallet .listCoin__item {
+        height: auto;
+        flex-flow: row wrap;
+        align-items: center;
+        padding: 20px 10px;
+        border: 0.25px solid #394F68;
+    }
+    #mainWallet .item__nameCoin {
+        width: 50%;
+        justify-content: flex-start;
+    }
+    #mainWallet .item__balance {
+        width: 50%;
+        justify-content: flex-end;
+    }
+    #mainWallet .item__listTool {
+        width: 100%;
+        justify-content: flex-end;
+        padding: 0px;
+        margin: 15px 0px 0px 0px;
+    }
+    #mainWallet .listCoin__item:first-child, #mainWallet .listCoin__item:last-child {
+        border-radius: 0px;
+    }
+    #mainWallet .btnTool {
+        margin: 0px 2px;
+        padding: 2.5px 10px;
+    }
+    .pageTrading__trading .name__text, #history .title .title__text, #wallet .title .title__text, #convert .title .title__text, #agency .title .title__text, #profile .title .title__text, #kyc .title .title__texts {
+        font-size: 0.85rem;
+        margin: 0px 10px 0px 0px;
+        position: static;
+    }
+    #wallet .modalDeposit, #wallet .modalWithdraw, #wallet .modalInternalTransfer, #modalUpgradeAgency .modalUpgradeAgency, #profile .modalChangePassword, #modalActiveGoogleStep1 .modalActiveGoogleStep1, #modalActiveGoogleStep2 .modalActiveGoogleStep2, #modalActiveGoogleStep3 .modalActiveGoogleStep3 {
+        width: calc(100% - 20px);
+    }
+    #mainWallet .blockTransHistory__header .title__text {
+        margin: 0px 10px 0px 0px;
+    }
+    #wallet .item__number {
+        text-align: right;
+    }
+    #exchangeWallet .header__tool {
+        display: none;
+    }
+    #exchangeWallet .listAccount__item {
+        height: auto;
+        flex-flow: row wrap;
+        align-items: center;
+        padding: 20px 10px;
+        border: 0.25px solid #394F68;
+    }
+    #exchangeWallet .item__nameAccount {
+        width: 60%;
+    }
+    #exchangeWallet .item__balance {
+        width: 40%;
+    }
+    #exchangeWallet .item__listTool {
+        width: 100%;
+        justify-content: flex-end;
+        padding: 0px;
+        margin: 15px 0px 0px 0px;
+    }
+    #exchangeWallet .boxInputTool {
+        width: 100%;
+    }
+    #exchangeWallet .nameAccount__boxUnit {
+        min-width: 30px;
+        min-height: 30px;
+    }
+    #convert .blockConvert {
+        flex-direction: column;
+    }
+    #convert .blockConvert__valueConvert {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #convert .blockConvert__btnConvert {
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+    }
+    #convert .valueConvert__blockSend {
+        width: 100%;
+        margin: 0px 0px 30px 0px;
+    }
+    #convert .valueConvert__blockReceive {
+        width: 100%;
+        margin: 30px 0px 0px 0px;
+    }
+    #convert .valueConvert__btnChange {
+        margin: 0 auto;
+    }
+    #convert .valueConvert__changeCurrency {
+        margin: 0 auto;
+    }
+    #agency .content {
+        flex-direction: column;
+        padding: 20px 20px 25px 20px;
+    }
+    #agency .content__blockRank {
+        width: 100%;
+    }
+    #agency .content__blockReferralCode {
+        width: 100%;
+        margin: 25px 0px 0px 0px;
+    }
+    #agency .code__listInfo {
+        flex-direction: column;
+    }
+    #agency .listInfo__item {
+        width: 100%;
+        margin: 0px 0px 30px 0px;
+    }
+    #agency .friend__tutorial {
+        flex-direction: column;
+    }
+    #agency .tutorial__item {
+        width: 100%;
+        margin: 0px 0px 25px 0px;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    #agency .text__title {
+        margin: 0px;
+        text-align: left;
+    }
+    #agency .text__note {
+        text-align: left;
+    }
+    #agency .item__boxImg {
+        min-width: 60px;
+        min-height: 60px;
+        margin: 0px 20px 0px 0px;
+    }
+    #profile .avatar__tool {
+        bottom: 0px;
+        height: 30px;
+        opacity: 1;
+    }
+    #profile .content__blockInfoUser {
+        flex-direction: column;
+    }
+    #profile .blockInfoUser__boxInfo {
+        width: 100%;
+        margin: 35px 0px 0px 0px;
+    }
+    #profile .boxInfo__form {
+        flex-direction: column;
+    }
+    #profile .form__boxInput {
+        width: 100%;
+    }
+    #profile .form__setting {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0px 0px 25px 0px;
+    }
+    #profile .form__setting:last-child {
+        margin: 0px;
+    }
+    #profile .setting__title {
+        width: 100%;
+        margin: 0px 0px 15px 0px;
+    }
+    #profile .setting__content {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    #history .blockFilterHistory__date {
+        margin: 0px 0px 10px 0px;
+    }
+    #history .blockFilterHistory__btn {
+        margin: 0px 0px 15px 0px;
+    }
+    #profile .error__text {
+        padding: 0px 15px 0px 35px;
+    }
+    #profile .pageProfile .form__error {
+        right: 0px;
+        left: 0px;
+        top: -20px;
+        min-width: 200px;
+        z-index: 2;
+        width: unset;
+        margin: auto;
+        bottom: unset;
+    }
+    #profile .form__boxInput {
+        margin: 0px 0px 20px 0px;
+    }
+    #profile .error__img {
+        margin: 0px;
+    }
+    #kyc .form__listInput {
+        flex-direction: column;
+    }
+    #kyc .listinput__input {
+        width: 100%;
+        margin: 0px 0px 15px 0px;
+    }
+    #kyc .listinput__select {
+        width: 100%;
+    }
+    #kyc .form__upload {
+        flex-direction: column;
+    }
+    #kyc .upload__item {
+        width: 100%;
+        margin: 0px 0px 35px 0px;
+    }
+    .blockDashboardAmount__info {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .blockDashboardAmount .info__item {
+        width: calc(100% / 2 - 7.5px);
+        margin: 0px 0px 10px 0px;
+    }
+    .pageTrading__trading .blockResult__item {
+        width: 12px;
+        height: 12px;
+    }
+    .pageTrading__trading .listResult__blockResult {
+        width: 70px;
+    }
+    .header__menuMobi .icMenu {
+        transform: scale(0.8);
+        top: calc((72.5px - 32px) / 2);
+    }
+    .infoTabNavigation__header .infoWallet__text {
+        font-size: 0.7rem;
+    }
+    .infoTabNavigation__header .money__text {
+        font-size: 0.9rem;
+    }
+    .infoTabNavigation__header .wallet__showList {
+        width: 12px;
+        height: 12px;
+    }
+    .infoTabNavigation__header .coin__showList {
+        display: none;
+    }
+    .infoTabNavigation__header .infoCoin__img {
+        margin: 0px;
+    }
+    .infoTabNavigation__header .tool__changeCoin {
+        margin: 0px;
+        height: 30px;
+    }
+    .infoTabNavigation__header .changeCoin__coinSelect {
+        padding: 0px 7.5px;
+    }
+    .infoTabNavigation__header .infoCoin__text {
+        padding: 0px 0px 0px 12.5px;
+        font-size: 0.85rem;
+    }
+    .infoTabNavigation__header .changeCoin__listCoin {
+        width: 150px;
+        top : 38px;
+    }
+    .infoTabNavigation__header .infoCoin__img {
+        width: 16px;
+        height: 16px;
+    }
+    .infoTabNavigation__header .btnRefreshDemo {
+        right: 2.5px;
+    }
+    .infoTabNavigation__header .noti__listNoti {
+        width: 200px;
+    }
+    .warningWeb .warningWeb__text {
+        font-size: 0.75rem;
+    }
+    #dashboard .title .title__text {
+        font-size: 1rem;
+    }
+    #agency .tool__btnUpgrade {
+        display: none;
+    }
+    #kyc .title {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    #kyc .title .title__text {
+        font-size: 1rem;
+        margin: 10px 0px 0px 3px;
+    }
+    #kyc .content {
+        padding: 20px 20px 50px 20px;
+    }
+    .infoTabNavigation__header .tool__changeGoldCoin {
+        height: 30px;
+    }
+    .modalBalance, .modalWin, .modalLose {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        transform: translate(0% , 0%) scale(0.75) !important;
+    }
+    .modalWin__boxContent {
+        width: 275px;
+    }
+    .warningWeb {
+        width: 350px;
+    }
+    .swiper-container {
+        width: 300px;
+        height: 200px;
+    }
+    .pageAutoBots .info__dayReceive {
+        flex-wrap: wrap;
+    }
+    .pageAutoBots .dayReceive__item {
+        width: calc(100% / 2 - 10px);
+        margin: 0px 0px 10px 0px;
+        text-align: center;
+    }
+    .pageAutoBots .content {
+        padding: 25px 15px 100px 15px;
+    }
+}
+/* IP 5 XOAY NGANG */
+
+@media screen and (width: 568px) {
+    html, body {
+        overflow: auto;
+    }
+    .modalBalance, .modalWin, .modalLose {
+        transform: translate(0% ,-15%) scale(0.75) !important;
+    }
+}
+
+/* SAMSUNG ĐỜI CŨ */
+
+@media screen and (max-width: 360px) {
+    .header__menuMobi .menuMobi__blockMenu {
+        width: 250px;
+    }
+    .tool__changeGoldCoin .changeCoin__listCoin {
+        right: -25px;
+    }
+    .warningWeb {
+        width: 300px;
+    }
+}
+
+/* IP 5 */
+
+@media screen and (max-width: 320px) {
+    .boxLogin, .boxRegister, .boxForgetPassword {
+        width: 300px;
+    }
+    .boxLogin .form__boxInput, .boxRegister .form__boxInput, .boxForgetPassword .form__boxInput {
+        width: 270px;
+    }
+    .pageTrading__trading .form__boxSelectAmount {
+        width: 150px;
+    }
+    .header__menuMobi .menuMobi__blockMenu {
+        width: 250px;
+    }
+    #mainWallet .item__listTool {
+        justify-content: center;
+    }
+    #profile .pageProfile .form__error {
+        right: 0px;
+        left: 0px;
+        top: -25px;
+        min-width: 200px;
+        z-index: 2;
+        width: unset;
+        margin: auto;
+    }
+    #profile .form__boxInput {
+        margin: 0px 0px 15px 0px;
+    }
+    .pageTrading__trading .listResult__blockResult {
+        max-width : 60px;
+    }
+    .pageTrading__trading .blockResult__item {
+        width: 10px;
+        height: 10px;
+    }
+    .pageTrading__trading .item__label {
+        font-size: 0.65rem;
+    }
+    #agency .infoRank__img {
+        bottom: 15px;
+    }
+    #agency .updrage__btnUpgrade {
+        height: 50px;
+        line-height: 20px;
+    }
+}

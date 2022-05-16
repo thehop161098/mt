@@ -1,0 +1,502 @@
+#profile .form__boxInput {
+    position: relative;
+}
+
+#profile .pageProfile .form__error {
+    position: absolute;
+    bottom: -47px;
+    left: 0px;
+}
+
+#profile .form__error {
+    background-color: #D8143C;
+    margin: 5px 0px 10px 0px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    /* visibility: hidden; */
+}
+
+#profile .error__text {
+    font-weight: 600;
+    font-size: 0.8em;
+    color: #FFF;
+    padding: 0px 35px;
+}
+
+#profile .error__img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 5px;
+    margin-top: -2px;
+}
+
+/* MODAL GOOGLE STEP 1 */
+
+#modalActiveGoogleStep1 .modalActiveGoogleStep1 {
+    width: 450px;
+}
+
+#modalActiveGoogleStep1 .modalContent {
+    background-color: #1B2A3B;
+    height: auto;
+    border-radius: 10px;
+}
+
+#modalActiveGoogleStep1 .modalContent__title {
+    height: 60px;
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    position: relative;
+}
+
+#modalActiveGoogleStep1 .title__text {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#modalActiveGoogleStep1 .title__btnClose {
+    position: absolute;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modalActiveGoogleStep1 .btnClose__img {
+    width: 25px;
+    height: 25px;
+}
+
+#modalActiveGoogleStep1 .modalContent__form {
+    padding: 15px;
+    width: 100%;
+    position: relative;
+}
+
+#modalActiveGoogleStep1 .form__btn {
+    margin: 15px 0px 0px 0px;
+    width: 100%;
+}
+
+#modalActiveGoogleStep1 .btn__text {
+    height: 45px;
+    width: 100%;
+    background-color: #148DFD;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: all 0.4s;
+}
+
+#modalActiveGoogleStep1 .btn__text:hover {
+    filter: brightness(0.8);
+    transition: all 0.4s;
+}
+
+#modalActiveGoogleStep1 .form__boxLinkDownload {
+    background-color: #293A4E;
+    padding: 15px 25px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+#modalActiveGoogleStep1 .note__text {
+    color: #FFF;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 20px;
+}
+
+#modalActiveGoogleStep1 .boxLinkDownload__listLink {
+    display: flex;
+    margin: 20px 0px 0px 0px;
+    justify-content: center;
+}
+
+#modalActiveGoogleStep1 .listLink__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #1B2A3B;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px 10px;
+}
+
+#modalActiveGoogleStep1 .listLink__item:hover {
+    filter: brightness(0.85);
+    cursor: pointer;
+}
+
+#modalActiveGoogleStep1 .item__img {
+    width: 25px;
+    height: 25px;
+    margin: 0px 10px 0px 0px;
+}
+
+#modalActiveGoogleStep1 .item__text {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #FFF;
+}
+
+#modalActiveGoogleStep1 .boxLinkDownload__note {
+    padding: 10px 0px;
+}
+
+/* MODAL GOOGLE STEP 2 */
+
+#modalActiveGoogleStep2 .modalActiveGoogleStep2 {
+    width: 450px;
+}
+
+#modalActiveGoogleStep2 .modalContent {
+    background-color: #1B2A3B;
+    height: auto;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#modalActiveGoogleStep2 .modalContent__title {
+    height: 60px;
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    position: relative;
+}
+
+#modalActiveGoogleStep2 .title__text {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#modalActiveGoogleStep2 .title__btnClose {
+    position: absolute;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modalActiveGoogleStep2 .btnClose__img {
+    width: 25px;
+    height: 25px;
+}
+
+#modalActiveGoogleStep2 .modalContent__form {
+    padding: 15px;
+    width: 100%;
+    position: relative;
+}
+
+#modalActiveGoogleStep2 .btn__text:hover {
+    filter: brightness(0.8);
+    transition: all 0.4s;
+}
+
+#modalActiveGoogleStep2 .form__boxLinkDownload {
+    background-color: #293A4E;
+    padding: 15px 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#modalActiveGoogleStep2 .note__text {
+    color: #FFF;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 20px;
+}
+
+#modalActiveGoogleStep2 .boxLinkDownload__listLink {
+    display: flex;
+    margin: 20px 0px 0px 0px;
+    justify-content: center;
+}
+
+#modalActiveGoogleStep2 .listLink__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #1B2A3B;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px 10px;
+}
+
+#modalActiveGoogleStep2 .listLink__item:hover {
+    filter: brightness(0.85);
+    cursor: pointer;
+}
+
+#modalActiveGoogleStep2 .item__img {
+    width: 25px;
+    height: 25px;
+    margin: 0px 10px 0px 0px;
+}
+
+#modalActiveGoogleStep2 .item__text {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #FFF;
+}
+
+#modalActiveGoogleStep2 .boxLinkDownload__note {
+    padding: 10px 0px;
+}
+
+#modalActiveGoogleStep2 .boxLinkDownload__qr {
+    width: 150px;
+    height: 150px;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    text-align: center;
+}
+
+#modalActiveGoogleStep2 .qr__img {
+    width: 140px;
+    height: 140px;
+}
+
+#modalActiveGoogleStep2 .boxLinkDownload__code {
+    padding: 10px 0px;
+    word-break: break-word;
+}
+
+#modalActiveGoogleStep2 .note__code {
+    color: #148DFD;
+    text-transform: uppercase;
+    padding: 0px 15px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+#modalActiveGoogleStep2 .form__btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0px 0px 0px;
+    width: 100%;
+}
+
+#modalActiveGoogleStep2 .btn__text {
+    height: 45px;
+    background-color: #148DFD;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: all 0.4s;
+    width: calc(100% / 2 - 5px);
+}
+
+#modalActiveGoogleStep2 .cancel {
+    background-color: #FF6960;
+}
+
+/* MODAL GOOGLE STEP 3 */
+
+#modalActiveGoogleStep3 .modalActiveGoogleStep3 {
+    width: 450px;
+}
+
+#modalActiveGoogleStep3 .modalContent {
+    background-color: #1B2A3B;
+    height: auto;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#modalActiveGoogleStep3 .modalContent__title {
+    height: 60px;
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    position: relative;
+}
+
+#modalActiveGoogleStep3 .title__text {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#modalActiveGoogleStep3 .title__btnClose {
+    position: absolute;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modalActiveGoogleStep3 .btnClose__img {
+    width: 25px;
+    height: 25px;
+}
+
+#modalActiveGoogleStep3 .modalContent__form {
+    padding: 15px;
+    width: 100%;
+    position: relative;
+}
+
+#modalActiveGoogleStep3 .btn__text:hover {
+    filter: brightness(0.8);
+    transition: all 0.4s;
+}
+
+#modalActiveGoogleStep3 .form__boxLinkDownload {
+    background-color: #293A4E;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+#modalActiveGoogleStep3 .note__text {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 20px;
+}
+
+#modalActiveGoogleStep3 .boxLinkDownload__note {
+    padding: 10px 0px;
+}
+
+#modalActiveGoogleStep3 .form__btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0px 0px 0px;
+    width: 100%;
+}
+
+#modalActiveGoogleStep3 .btn__text {
+    height: 45px;
+    width: 100%;
+    background-color: #148DFD;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: all 0.4s;
+}
+
+#modalActiveGoogleStep3 .boxLinkDownload__note {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#modalActiveGoogleStep3 .note__img {
+    width: 40px;
+    height: 40px;
+    margin: 0px 25px 0px 0px;
+}
+
+#modalActiveGoogleStep3 .boxLinkDownload__listInputCode {
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#modalActiveGoogleStep3 .listInputCode__item {
+    width: calc(100% / 6 - 10px);
+    background-color: #1B2A3B;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modalActiveGoogleStep3 .item__input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #FFF;
+    text-align: center;
+}
+
+#modalActiveGoogleStep3 .boxLinkDownload__boxInput {
+    background: #1B2A3B;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0px 0px 5px 0px;
+}
+
+#modalActiveGoogleStep3 .boxInput__label {
+    color: #B2B8D2;
+    font-weight: 700;
+    margin: 0px 0px 15px 0px;
+}
+
+#modalActiveGoogleStep3 .boxInput__input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-weight: 500;
+}
+
+#profile .content__link {
+    height: 35px;
+    color: #FFF;
+    background-color: #148DFD;
+    border: none;
+    outline: none;
+    border-radius: 17.5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0px 20px;
+    line-height: 35px;
+    text-decoration: none;
+}

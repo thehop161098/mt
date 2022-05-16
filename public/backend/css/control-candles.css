@@ -1,0 +1,39 @@
+#controlCandles .btn-higher {
+    background-color: #00B572;
+}
+
+#controlCandles .btn-balance {
+    background-color: #e19049;
+}
+
+#controlCandles .btn-lower {
+    background-color: #ff6960;
+}
+
+#controlCandles .btn-controlCandles {
+    margin-right: 5px;
+}
+
+#controlCandles .display-block {
+    display: block;
+}
+
+#controlCandles p.lower {
+    color: #ff6960;
+}
+
+#controlCandles p.higher {
+    color: #00b572;
+}
+
+#controlCandles p.balance {
+    color: #e19049;
+}
+
+#controlCandles #borderTop:first-child {
+    border-top: none;
+}
+
+#controlCandles #borderTop {
+    border-top: solid 2px;
+}

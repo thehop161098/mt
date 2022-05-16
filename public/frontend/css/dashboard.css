@@ -1,0 +1,438 @@
+/* ------------------------------ TAB DASHBOARD -------------------------- */
+
+#dashboard {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100vh - 70px);
+}
+
+#dashboard .title {
+    position: fixed;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1B2A3B;
+    width: calc(100% - 82.5px);
+    padding: 0px 20px;
+    z-index: 9;
+}
+
+#dashboard .title .title__text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#dashboard .content {
+    padding: 70px 20px 25px 20px;
+}
+
+#dashboard .blockDashboardHistory {
+    width: 100%;
+    border-radius: 20px;
+    padding: 30px 0px 10px 0px;
+}
+
+#dashboard .blockDashboardHistory__header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+#dashboard .blockDashboardHistory__header .title__text {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#dashboard .table__header {
+    background-color: #394F68;
+    border: 2px solid #394F68;
+}
+
+#dashboard .table__content {
+    border: 2px solid #394F68;
+    border-top: none;
+}
+
+#dashboard .table__header .header__item {
+    color: #FFF;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0px 10px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #293A4E;
+}
+
+#dashboard .content__item {
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    color: #FFF;
+    font-weight: 600;
+}
+
+#dashboard .content__listItem {
+    background-color: #1B2A3B;
+}
+
+#dashboard .content__listItem:hover {
+    background-color: #172432;
+}
+
+#dashboard .content__item.high, #dashboard .content__item.statusSuccess {
+    color: #22D291;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#dashboard .content__item.low, #dashboard .content__item.statusFail {
+    color: #FF6960;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#dashboard .content__item.balance {
+    color: #E19049;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#dashboard .blockDashboardInfo {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#dashboard .blockDashboardInfo__totalMoney {
+    width: calc(100% / 2 - 7.5px);
+}
+
+#dashboard .totalMoney__listItem {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#dashboard .listItem__itemForm {
+    width: calc(100% / 2 - 5px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #293A4E;
+    margin: 0px 0px 10px 0px;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+#dashboard .itemForm__label {
+    color: #B2B8D2;
+    font-weight: 600;
+    margin: 0px 0px 15px 0px;
+}
+
+#dashboard .itemForm__number {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+#dashboard .blockDashboardInfo__totalResult {
+    width: calc(100% / 2 - 7.5px);
+    background-color: #293A4E;
+    border-radius: 8px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dashboard .totalResult__trade {
+    display: flex;
+    min-width: 200px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1B2A3B;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin: 0px 0px 22px 0px;
+}
+
+#dashboard .trade__label {
+    color: #B2B8D2;
+    font-weight: 600;
+    margin: 0px 0px 10px 0px;
+}
+
+#dashboard .trade__number {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#dashboard .totalResult__listResult {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#dashboard .listResult__item {
+    width: calc(100% / 3 - 10px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #1B2A3B;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#dashboard .item__square {
+    width: 45px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 0px 12.5px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dashboard .item__square.win {
+    background-color: #02C076;
+}
+
+#dashboard .item__square.draw {
+    background-color: #E19049;
+}
+
+#dashboard .item__square.lose {
+    background-color: #D9304E;
+}
+
+#dashboard .item__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#dashboard .info__label {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin: 0px 0px 7.5px 0px;
+}
+
+#dashboard .info__number {
+    color: #FFF;
+    font-weight: 700;
+}
+
+/* Modal */
+
+#dashboard #modalRefund .boxContent__title {
+    height: 60px;
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    position: relative;
+}
+
+#dashboard #modalRefund .modalRefund {
+    width: 450px;
+}
+
+#dashboard #modalRefund .modalRefund__boxContent {
+    background-color: #1B2A3B;
+    height: auto;
+    border-radius: 10px;
+}
+
+#dashboard #modalRefund .title__text {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#dashboard #modalRefund .title__btnClose {
+    position: absolute;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dashboard #modalRefund .btnClose__img {
+    width: 25px;
+    height: 25px;
+}
+
+#dashboard #modalRefund .boxContent__form {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+#dashboard #modalRefund .form__note {
+    margin: 15px 0px 20px 0px;
+    padding: 0px 2.5px;
+}
+
+#dashboard #modalRefund .note__text {
+    color: #E19049;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 10px 0px;
+    line-height: 20px;
+}
+
+#dashboard #modalRefund .form__btn {
+    width: 100%;
+}
+
+#dashboard #modalRefund .btnConfirm {
+    width: 100%;
+    background-color: #148DFD;
+    border: none;
+    outline: none;
+    height: 40px;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.4s;
+}
+
+#dashboard .blockRefundHistory {
+    width: 100%;
+    border-radius: 20px;
+    padding: 0px 0px 10px 0px;
+}
+
+#dashboard .blockRefundHistory__table {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#dashboard .table__header {
+    background-color: #394F68;
+    border: 2px solid #394F68;
+}
+
+#dashboard .table__header {
+    background-color: #394F68;
+    border: 2px solid #394F68;
+}
+
+#dashboard .table__content {
+    border: 2px solid #394F68;
+    border-top: none;
+}
+
+#dashboard .table__header .header__item {
+    color: #FFF;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0px 10px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #293A4E;
+}
+
+#dashboard .table__content {
+    border: 2px solid #394F68;
+    border-top: none;
+}
+
+#dashboard .table__header .header__item {
+    color: #FFF;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0px 10px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #293A4E;
+}
+
+#dashboard .content__item {
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    color: #FFF;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#dashboard .content__listItem {
+    background-color: #1B2A3B;
+}
+
+#dashboard .content__listItem:hover {
+    background-color: #172432;
+}
+
+#dashboard .content__item.high {
+    color: #22D291;
+    font-weight: 700;
+}
+
+#dashboard .content__item.low {
+    color: #FF6960;
+    font-weight: 700;
+}
+
+#dashboard .content__item.balance {
+    color: #E19049;
+    font-weight: 700;
+}
+
+#dashboard .content__item.profit__win {
+    color: #00B572;
+    font-weight: 700;
+}
+
+#dashboard .content__item.profit__lose {
+    color: #FF6960;
+    font-weight: 700;
+}
+
+#dashboard .refundCustome {
+    color: #fff;
+}
+
+#dashboard .refundCustome p {
+    float: left;
+    margin: 5px;
+}
+
+#dashboard .doneRefund {
+    pointer-events: none;
+    background: #525d67;
+}
+
+#dashboard .item__percent {
+    color : #FFF;
+    font-weight: 600;
+    font-size: 0.9rem;
+}

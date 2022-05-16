@@ -1,0 +1,4992 @@
+/* ------------------------------ LOGIN -------------------------- */
+
+.fullLogin {
+    background-image: url(../images/background/bgLogin.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.boxLogin {
+    width: 350px;
+    height: auto;
+    background: #1B2A3B;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 15px 15px 15px;
+}
+
+.boxLogin .boxLogin__logo {
+    padding: 25px;
+    position: relative;
+    margin: 0px 0px 25px 0px;
+}
+
+.boxLogin .circleColor,
+.boxLogin .squareColor,
+.boxLogin .plusColor {
+    width: 12px;
+    height: 12px;
+}
+
+.boxLogin .circleColor g {
+    stroke: none;
+    stroke-width: 1;
+    fill: none;
+    fill-rule: evenodd;
+}
+
+.boxLogin .squareColor rect {
+    stroke-width: 7;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill-rule: evenodd;
+}
+
+.boxLogin .plusColor line {
+    fill: none;
+    stroke-width: 5;
+}
+
+.boxLogin .circleColor:nth-child(1) {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: -10px;
+    left: -9px;
+    animation: opIcon 2.5s ease-in-out 3s infinite;
+}
+
+.boxLogin .circleColor:nth-child(2) {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 35px;
+    right: -1px;
+    animation: opIcon 8s ease-in-out 2s infinite;
+}
+
+.boxLogin .circleColor:nth-child(3) {
+    position: absolute;
+    bottom: 0px;
+    left: 37px;
+    animation: opIcon 2s ease-in-out 4.4s infinite;
+}
+
+.boxLogin .circleColor:nth-child(4) {
+    position: absolute;
+    top: 13px;
+    left: 177px;
+    animation: opIcon 4s ease-in-out 2s infinite;
+}
+
+.boxLogin .squareColor:nth-child(5) {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    bottom: 10px;
+    right: 8px;
+    transform: rotate(-65deg);
+    animation: opIcon 3s ease-in-out 7s infinite;
+}
+
+.boxLogin .squareColor:nth-child(6) {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 10px;
+    left: 87px;
+    transform: rotate(-38deg);
+    animation: opIcon 1s ease-in-out 4s infinite;
+}
+
+.boxLogin .squareColor:nth-child(7) {
+    position: absolute;
+    top: -20px;
+    right: 3px;
+    transform: rotate(-112deg);
+    animation: opIcon 2s ease-in-out 5s infinite;
+}
+
+.boxLogin .squareColor:nth-child(8) {
+    position: absolute;
+    top: 57px;
+    left: 30px;
+    transform: rotate(-22deg);
+    animation: opIcon 4.5s ease-in-out 7s infinite;
+}
+
+.boxLogin .plusColor:nth-child(9) {
+    position: absolute;
+    bottom: 0px;
+    left: 130px;
+    transform: rotate(-77deg);
+    animation: opIcon 5s ease-in-out 2.25s infinite;
+}
+
+.boxLogin .plusColor:nth-child(10) {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 102px;
+    left: -4px;
+    transform: rotate(-99deg);
+    animation: opIcon 6s ease-in-out 3.5s infinite;
+}
+
+.boxLogin .plusColor:nth-child(11) {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: -27px;
+    left: 45px;
+    transform: rotate(-129deg);
+    animation: opIcon 4s ease-in-out 1.5s infinite;
+}
+
+.boxLogin .plusColor:nth-child(12) {
+    position: absolute;
+    top: 79px;
+    right: 20px;
+    transform: rotate(-62deg);
+    animation: opIcon 3.5s ease-in-out 4s infinite;
+}
+
+.boxLogin .logo__boxLogo {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxLogin .logo__boxLogo .logo__img {
+    width: 90px;
+    /* height: 50px; */
+    animation: upDownLogo 3s ease-in-out infinite;
+}
+
+@keyframes opIcon {
+    0% {
+        opacity: 0.2;
+    }
+
+    25% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 1.4;
+    }
+
+    75% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+
+@keyframes upDownLogo {
+    0% {
+        transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateY(12.5px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+.boxLogin .boxLogin__form {
+    width: 100%;
+}
+
+.boxLogin .form__boxInput {
+    background: #293A4E;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0px 0px 5px 0px;
+    position: relative;
+}
+
+.boxLogin .boxInput__label {
+    color: #FFF;
+    font-weight: 700;
+    margin: 0px 0px 15px 0px;
+}
+
+.boxLogin .boxInput__input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-weight: 500;
+    padding: 0px;
+}
+
+.boxLogin .boxInput__input::placeholder {
+    color: #888;
+}
+
+.boxLogin .form__btn {
+    margin: 20px 0px 0px 0px;
+}
+
+.boxLogin .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.boxLogin .btn:hover {
+    filter: brightness(0.8);
+    transition: all 0.6s;
+}
+
+.boxLogin .btn {
+    width: 100%;
+    border: none;
+    height: 45px;
+    color: #FFF;
+    font-weight: 700;
+    border-radius: 8px;
+    margin: 0px 0px 5px 0px;
+    transition: all 0.6s;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.boxLogin .login {
+    background-color: #148DFD;
+}
+
+.boxLogin .register {
+    background-color: #1182A2;
+}
+
+.boxLogin .boxInput__btnForgetPassword {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 7.5px;
+    margin: -7.5px 0px 0px 0px;
+    transition: all 0.6s;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12.5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.boxLogin .boxInput__btnForgetPassword:hover {
+    filter: brightness(0.8);
+    transition: all 0.6s;
+    background-color: #1B2A3B;
+}
+
+.boxLogin .btnForgetPassword__img {
+    width: 15px;
+    height: 15px;
+}
+
+.boxLogin .form__error {
+    background-color: #D8143C;
+    margin: 0px 0px 10px 0px;
+    padding: 10px 0px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.boxLogin .error__text {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #FFF;
+    padding: 0px 15px;
+    line-height: 20px;
+    text-align: center;
+}
+
+/* ------------------------------ REGISTER -------------------------- */
+.fullRegister {
+    background-image: url(../images//background/bgLogin.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.boxRegister {
+    width: 350px;
+    height: auto;
+    background: #1B2A3B;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.boxRegister .boxRegister__form {
+    width: 100%;
+}
+
+.boxRegister .form__boxInput {
+    background: #293A4E;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0px 0px 5px 0px;
+}
+
+.boxRegister .boxInput__label {
+    color: #FFF;
+    font-weight: 700;
+    margin: 0px 0px 15px 0px;
+}
+
+.boxRegister .boxInput__input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-weight: 500;
+    padding: 0px;
+}
+
+.boxRegister .boxInput__input::placeholder {
+    color: #888;
+}
+
+.boxRegister .form__btn {
+    margin: 15px 0px 0px 0px;
+}
+
+.boxRegister .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.boxRegister .btn:hover {
+    filter: brightness(0.8);
+    transition: all 0.6s;
+}
+
+.boxRegister .btn {
+    width: 100%;
+    border: none;
+    height: 45px;
+    color: #FFF;
+    font-weight: 700;
+    border-radius: 8px;
+    margin: 7.5px 0px 0px 0px;
+    transition: all 0.6s;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.boxRegister .register {
+    background-color: #148DFD;
+}
+
+.boxRegister .login {
+    background-color: #D8143C;
+}
+
+.boxRegister .boxInput__required {
+    color: #D8143C;
+    padding: 0px 0px 0px 2.5px;
+}
+
+.boxRegister .form__acceptPolicy {
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxRegister .acceptPolicy__checked {
+    margin: 0px 10px 0px 0px;
+}
+
+.boxRegister .acceptPolicy__text {
+    color: #FFF;
+    font-weight: 700;
+    line-height: 15px;
+    font-size: 0.9rem;
+}
+
+.boxRegister .acceptPolicy__link {
+    color: #148DFD;
+}
+
+.boxRegister .form__error {
+    background-color: #D8143C;
+    margin: 0px 0px 10px 0px;
+    padding: 10px 0px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.boxRegister .error__text {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #FFF;
+    padding: 0px 15px;
+    line-height: 20px;
+    text-align: center;
+}
+
+/* ------------------------------ FORGET PASSWORD -------------------------- */
+
+.fullForgetPassword {
+    background-image: url(../images//background/bgLogin.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.boxForgetPassword {
+    width: 350px;
+    height: auto;
+    background: #1B2A3B;
+    border-radius: 20px;
+    padding: 30px 15px 15px 15px;
+}
+
+.boxForgetPassword .boxForgetPassword__form {
+    width: 100%;
+}
+
+.boxForgetPassword .form__boxInput {
+    background: #293A4E;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0px 0px 5px 0px;
+}
+
+.boxForgetPassword .boxInput__label {
+    color: #FFF;
+    font-weight: 700;
+    margin: 0px 0px 15px 0px;
+}
+
+.boxForgetPassword .boxInput__input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-weight: 500;
+    padding: 0px;
+}
+
+.boxForgetPassword .boxInput__input::placeholder {
+    color: #888;
+}
+
+.boxForgetPassword .form__btn {
+    margin: 20px 0px 0px 0px;
+}
+
+.boxForgetPassword .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.boxForgetPassword .btn:hover {
+    filter: brightness(0.8);
+    transition: all 0.6s;
+}
+
+.boxForgetPassword .btn {
+    width: 100%;
+    border: none;
+    height: 45px;
+    color: #FFF;
+    font-weight: 700;
+    border-radius: 8px;
+    margin: 7.5px 0px 0px 0px;
+    transition: all 0.6s;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.boxForgetPassword .confirm {
+    background-color: #148DFD;
+}
+
+.boxForgetPassword .boxInput__required {
+    color: #D8143C;
+    padding: 0px 0px 0px 2.5px;
+}
+
+.boxForgetPassword .form__boxNote {
+    width: 300px;
+    margin: 25px 0px 100px 0px;
+}
+
+.boxForgetPassword .boxNote__text {
+    color: #FFF;
+    font-weight: 700;
+    text-align: center;
+}
+
+.boxForgetPassword .login {
+    background-color: #D8143C;
+}
+
+.boxForgetPassword .form__error {
+    background-color: #D8143C;
+    margin: 0px 0px 10px 0px;
+    padding: 10px 0px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.boxForgetPassword .error__text {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #FFF;
+    padding: 0px 15px;
+    line-height: 20px;
+    text-align: center;
+}
+
+/* ------------------------------ FULLWEB -------------------------- */
+
+.fullWeb {
+    display: flex;
+    flex-direction: row;
+    background-color: #F1F8FF;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* ------------------------------ TAB NAVIGATION -------------------------- */
+
+.tabNavigation {
+    width: 75px;
+    background-color: #1B2A3B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.tabNavigation .item__boxImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 22.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.tabNavigation .item__boxImg.active {
+    background-color: #148DFD;
+    transition: all 0.4s ease;
+    box-shadow: 0px 0px 10px rgba(56, 164, 255, 0.8);
+    border-radius: 10px;
+}
+
+.tabNavigation .item__boxImg:hover .boxImg__note {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.6s ease;
+}
+
+.tabNavigation .boxImg__note {
+    height: 40px;
+    position: absolute;
+    left: 70px;
+    background-color: #148DFD;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease;
+    z-index: 100;
+}
+
+.tabNavigation .boxImg__note:before {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -10px;
+    top: calc((40px - 10px) / 2);
+    border-style: solid;
+    border-width: 5px;
+    content: "";
+    border-color: transparent #148DFD transparent transparent;
+}
+
+.tabNavigation .noteWarning:before {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -10px;
+    top: calc((40px - 10px) / 2);
+    border-style: solid;
+    border-width: 5px;
+    content: "";
+    border-color: transparent #D8143C transparent transparent;
+}
+
+.tabNavigation .boxImg__note .note__text {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 0px 25px;
+}
+
+.tabNavigation .item__boxImg .boxImg__icTrading, .tabNavigation .item__boxImg .boxImg__icHistory, .tabNavigation .item__boxImg .boxImg__icDashboard, .tabNavigation .item__boxImg .boxImg__icWallet, .tabNavigation .item__boxImg .boxImg__icConvert, .tabNavigation .item__boxImg .boxImg__icAgency, .tabNavigation .item__boxImg .boxImg__icProfile, .tabNavigation .item__boxImg .boxImg__icBots {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    transition: all 0.4s ease;
+    filter: brightness(0.6);
+}
+
+.tabNavigation .item__boxImg.active .boxImg__icTrading, .tabNavigation .item__boxImg.active .boxImg__icHistory, .tabNavigation .item__boxImg.active .boxImg__icDashboard, .tabNavigation .item__boxImg.active .boxImg__icWallet, .tabNavigation .item__boxImg.active .boxImg__icConvert, .tabNavigation .item__boxImg.active .boxImg__icAgency, .tabNavigation .item__boxImg.active .boxImg__icProfile, .tabNavigation .item__boxImg.active .boxImg__icBots {
+    filter: brightness(1.2);
+    transition: all 0.4s ease;
+}
+
+.tabNavigation .item__boxImg.active .boxImg__icTrading {
+    background-image: url(../images/icons/icTradingActive.png) !important;
+}
+
+.tabNavigation .item__boxImg.active .boxImg__icHistory {
+    background-image: url(../images/icons/icHistoryActive.png) !important;
+}
+
+.tabNavigation .item__boxImg.active .boxImg__icDashboard {
+    background-image: url(../images/icons/icDashboardActive.png) !important;
+}
+
+.tabNavigation .item__boxImg.active .boxImg__icWallet {
+    background-image: url(../images/icons/icWalletActive.png) !important;
+}
+
+.tabNavigation .item__boxImg.active .boxImg__icConvert {
+    background-image: url(../images/icons/icConvertActive.png) !important;
+}
+
+.tabNavigation .item__boxImg.active .boxImg__icAgency {
+    background-image: url(../images/icons/icAgencyActive.png) !important;
+}
+
+.tabNavigation .item__boxImg.active .boxImg__icProfile {
+    background-image: url(../images/icons/icProfileActive.png) !important;
+}
+
+.tabNavigation .item__boxImg.active .boxImg__icBots {
+    background-image: url(../images/icons/icBotsActive.png) !important;
+}
+
+/* ------------------------------ INFO TAB NAVIGATION -------------------------- */
+
+.infoTabNavigation {
+    width: calc(100% - 75px);
+    background-color: #1B2A3B;
+    border-left: 0.25px solid #28394D;
+    height: 100vh;
+}
+
+/* ------------------------------ INFO HEADER -------------------------- */
+
+.infoTabNavigation__header {
+    height: 70px;
+    background-color: #1B2A3B;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.25px solid #28394D;
+}
+
+.infoTabNavigation__header .header__logo {
+    width: 130px;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoTabNavigation__header .logo__img {
+    width: 45px;
+    /* height: 35px; */
+}
+
+.infoTabNavigation__header .header__logo:before {
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50px;
+    height: 70px;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+}
+
+.infoTabNavigation__header .header__logo:hover:before {
+    left: 175px;
+    transition: 0.8s;
+}
+
+.infoTabNavigation__header .header__tool {
+    padding: 0px 10px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+/* CHANGE COIN */
+
+.infoTabNavigation__header .tool__changeCoin {
+    background-color: #293A4E;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+    margin: 0px 10px 0px 0px;
+}
+
+.infoTabNavigation__header .infoCoin__text {
+    color: #FFF;
+    font-weight: 700;
+}
+
+.infoTabNavigation__header .coinSelect__infoCoin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px 0px 0px;
+}
+
+.infoTabNavigation__header .infoCoin__img {
+    width: 25px;
+    height: 25px;
+    margin: 0px 10px 0px 0px;
+}
+
+.infoTabNavigation__header .changeCoin__input {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    opacity: 0;
+}
+
+.infoTabNavigation__header .changeCoin__input:checked~.changeCoin__coinSelect .coin__showList {
+    transform: rotate(180deg);
+    transition: 0.4s;
+}
+
+.infoTabNavigation__header .coin__showList {
+    width: 16px;
+    height: 16px;
+    transition: 0.4s;
+}
+
+.infoTabNavigation__header .changeCoin__coinSelect {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px;
+    justify-content: space-between;
+}
+
+.infoTabNavigation__header .changeCoin__listCoin {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    right: 0px;
+    top: 60px;
+    width: 200px;
+    background-color: #394F68;
+    box-shadow: 0px 4px 20px #0f13245c;
+    border-radius: 8px;
+    transition: 0.6s;
+    z-index: 99;
+}
+
+.infoTabNavigation__header .changeCoin__input:checked~.changeCoin__listCoin {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.infoTabNavigation__header .coin__infoCoin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.infoTabNavigation__header .coin__infoCoin:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.infoTabNavigation__header .coin__infoCoin:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.infoTabNavigation__header .coin__infoCoin:hover {
+    background-color: #293A4E;
+    cursor: pointer;
+}
+
+/* CHANGE WALLET */
+
+.infoTabNavigation__header .tool__changeWallet {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0px 10px 0px 0px;
+}
+
+.infoTabNavigation__header .changeWallet__walletSelect {
+    flex-direction: row;
+    display: flex;
+    padding: 0px 10px 0px 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infoTabNavigation__header .infoWallet__text {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.infoTabNavigation__header .money__text {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 7.5px 0px 0px 0px;
+}
+
+.infoTabNavigation__header .money__unit {
+    color: #148DFD;
+}
+
+.infoTabNavigation__header .walletSelect__infoWallet {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px 15px 0px 0px;
+}
+
+.infoTabNavigation__header .infoWallet__money {
+    flex-direction: row;
+    display: flex;
+}
+
+.infoTabNavigation__header .infoCoin__img {
+    width: 25px;
+    height: 25px;
+    margin: 0px 10px 0px 0px;
+}
+
+.infoTabNavigation__header .changeWallet__input {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    opacity: 0;
+}
+
+.infoTabNavigation__header .changeWallet__input:checked~.changeWallet__walletSelect .wallet__showList {
+    transform: rotate(180deg);
+    transition: 0.4s;
+}
+
+.infoTabNavigation__header .wallet__showList {
+    width: 16px;
+    height: 16px;
+    transition: 0.4s;
+}
+
+.infoTabNavigation__header .changeCoin__coinSelect {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px;
+    justify-content: space-between;
+}
+
+.infoTabNavigation__header .changeWallet__listWallet {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    right: 0px;
+    top: 60px;
+    width: 175px;
+    background-color: #394F68;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px #0f13245c;
+    transition: 0.6s;
+    z-index: 99;
+}
+
+.infoTabNavigation__header .changeWallet__input:checked~.changeWallet__listWallet {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.infoTabNavigation__header .wallet__infoWallet {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+}
+
+.infoTabNavigation__header .wallet__infoWallet:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.infoTabNavigation__header .wallet__infoWallet:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.infoTabNavigation__header .wallet__infoWallet:hover {
+    background-color: #293A4E;
+    cursor: pointer;
+}
+
+.infoTabNavigation__header .btnRefreshDemo {
+    position: absolute;
+    right: -5px;
+    top: 5px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.infoTabNavigation__header .infoCoin__img {
+    width: 18px;
+    height: 18px;
+}
+
+/* PROFILE */
+
+.infoTabNavigation__header .tool__profile {
+    background-color: #293A4E;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    position: relative;
+    margin: 0px 0px 0px 10px;
+}
+
+.infoTabNavigation__header .profile__infoProfile {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.infoTabNavigation__header .infoProfile__img {
+    width: 18px;
+    height: 18px;
+    margin: 0px 10px 0px 10px;
+}
+
+.infoTabNavigation__header .profile__input {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    opacity: 0;
+}
+
+.infoTabNavigation__header .profile__listProfile {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    right: 0px;
+    top: 50px;
+    transition: 0.6s;
+    min-width: 200px;
+    background-color: #394F68;
+    box-shadow: 0px 4px 20px #0f13245c;
+    z-index: 99;
+    border-radius: 10px;
+}
+
+.infoTabNavigation__header .listProfile__nameUser {
+    background-image: url(../images/background/bgHeaderProfile.jpg);
+    min-height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.infoTabNavigation__header .listProfile__listItem .listItem__item:last-child .item__text {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.infoTabNavigation__header .profile__input:checked~.profile__listProfile {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.infoTabNavigation__header .nameUser__text {
+    color: #FFF;
+    font-weight: 700;
+    padding: 0px 10px;
+}
+
+.infoTabNavigation__header .listItem__item:hover {
+    text-decoration: none;
+}
+
+.infoTabNavigation__header .listItem__item:hover .item__text {
+    background-color: #293A4E;
+    cursor: pointer;
+}
+
+.infoTabNavigation__header .item__text {
+    color: #FFF;
+    font-weight: 700;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 10px;
+}
+
+.infoTabNavigation__header .item__text.itemlo {
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* ------------------------------ INFO CONTENT TAB -------------------------- */
+
+.infoTabNavigation__content .title__text {
+    color: #FFF;
+    font-weight: 800;
+}
+
+.infoTabNavigation__content {
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* ------------------------------ TAB PROFILE -------------------------- */
+
+#profile {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100vh - 70px);
+}
+
+#profile .title {
+    position: static;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1B2A3B;
+    width: 100%;
+    padding: 0px 20px;
+    z-index: 9;
+}
+
+#profile .title .title__text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.content {
+    padding: 25px 20px 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#profile .content__blockInfoUser {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #293A4E;
+}
+
+#profile .blockInfoUser__boxAvatar {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+#profile .blockInfoUser__boxInfo {
+    width: calc(100% - 200px);
+}
+
+#profile .boxInfo__form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#profile .boxAvatar__avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#profile .avatar__img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    transition: 0.6s;
+}
+
+#profile .avatar__tool {
+    position: absolute;
+    bottom: -30px;
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+#profile .tool__btnEditAvatar {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+}
+
+#profile .btnEditAvatar__img {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+#profile .boxAvatar__avatar:hover .avatar__tool {
+    bottom: 0px;
+    transition: 0.4s;
+    opacity: 1;
+}
+
+#profile .boxAvatar__avatar:hover .avatar__img {
+    transform: scale(1.15);
+    transition: 0.6s;
+}
+
+#profile .boxInfo__name {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#profile .form__boxInput {
+    background: #1B2A3B;
+    width: calc(100% / 3 - 5px);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0px 0px 5px 0px;
+}
+
+#profile .boxInput__label {
+    color: #B2B8D2;
+    font-weight: 700;
+    margin: 0px 0px 15px 0px;
+}
+
+#profile .boxInput__input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-weight: 500;
+}
+
+#profile .content__blockSettingUser {
+    background-color: #293A4E;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px 0px 0px 0px;
+}
+
+#profile .form__setting {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+#profile .form__setting:last-child {
+    padding: 10px 0px 20px 0px;
+}
+
+#profile .content__btn {
+    height: 35px;
+    color: #FFF;
+    background-color: #148DFD;
+    border: none;
+    outline: none;
+    border-radius: 17.5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0px 20px;
+}
+
+#profile .setting__title {
+    width: 50%;
+}
+
+#profile .setting__content {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#profile .content__blockSettingUser .title__text {
+    color: #FFF;
+    font-weight: 700;
+}
+
+#profile .content__blockSettingUser .title__note {
+    color: #B2B8D2;
+    font-size: 0.9rem;
+    margin: 10px 0px 0px 0px;
+}
+
+#profile .setting__content .content__text {
+    color: #FFF;
+    font-weight: 700;
+}
+
+#profile .content__toogle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile .toogle__bgToogle {
+    width: 28px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #E0E0E0;
+    transition: 0.4s;
+}
+
+#profile .toogle__check {
+    width: 28px;
+    height: 15px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#profile .toogle__circle {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #FFF;
+    border-radius: 8px;
+    left: 0px;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+#profile .content__toogle.active2fa .toogle__circle {
+    left: 12px;
+    background-color: #FFF;
+}
+
+#profile .content__toogle.active2fa .toogle__bgToogle {
+    background-color: #0189FF;
+}
+
+/* #profile .toogle__check:checked ~ .toogle__circle {
+    left: 12px;
+    transition: 0.4s;
+    background-color: #FFF;
+}
+#profile .toogle__check:checked ~ .toogle__bgToogle {
+    background-color: #0189FF;
+    transition: 0.4s;
+} */
+
+#profile #modalChangePassword .modalChangePassword__boxChangePassword {
+    background-color: #1B2A3B;
+    height: auto;
+    border-radius: 10px;
+}
+
+#profile #modalChangePassword .boxChangePassword__title {
+    height: 60px;
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    position: relative;
+}
+
+#profile #modalChangePassword .title__text {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#profile #modalChangePassword .title__btnClose {
+    position: absolute;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile #modalChangePassword .btnClose__img {
+    width: 25px;
+    height: 25px;
+}
+
+#profile .boxChangePassword__form {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+#profile .modalChangePassword {
+    width: 450px;
+}
+
+#profile #modalChangePassword .form__btn {
+    margin: 15px 0px 0px 0px;
+    width: 100%;
+}
+
+#profile #modalChangePassword .confirm {
+    background-color: #148DFD;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 45px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 22.5px;
+    transition: all 0.4s;
+}
+
+#profile #modalChangePassword .confirm:hover {
+    filter: brightness(0.85);
+    transition: all 0.4s;
+}
+
+#profile .tool__btnSave {
+    background-color: #00AA13;
+    outline: none;
+    border: none;
+    height: 30px;
+    padding: 0px 15px;
+    color: #FFF;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: all 0.4s;
+}
+
+#profile .inputPassword {
+    background-color: #293A4E;
+    width: 100%;
+}
+
+/* ------------------------------ TAB WALLET -------------------------- */
+
+#wallet {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100vh - 70px);
+}
+
+#wallet .title {
+    position: static;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1B2A3B;
+    padding: 0px 20px;
+    z-index: 9;
+}
+
+#wallet .title .title__text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#wallet .content {
+    padding: 70px 20px 25px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#wallet .title__tool {
+    background-color: #293A4E;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12.5px;
+}
+
+#wallet .tool__selectWallet {
+    display: flex;
+    flex-direction: row;
+}
+
+#wallet .item__img {
+    width: 16px;
+    height: 16px;
+}
+
+#wallet .item__text {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: none;
+    transition: all 0.4s;
+}
+
+#wallet .selectWallet__item {
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+#wallet .selectWallet__item.active {
+    background-color: #148DFD;
+    transition: all 0.4s;
+}
+
+#wallet .active .item__text {
+    display: block;
+    transition: all 0.4s;
+}
+
+#wallet .active .item__img {
+    margin: 0px 5px 0px 0px;
+}
+
+#wallet .selectWallet__item:hover {
+    filter: brightness(0.85);
+    transition: all 0.4s;
+}
+
+/* MODAL WALLET */
+
+#wallet .modalDeposit {
+    width: 450px;
+}
+
+#wallet .modalWithdraw {
+    width: 450px;
+}
+
+#wallet .modalInternalTransfer {
+    width: 450px;
+}
+
+#wallet .modalContent {
+    background-color: #1B2A3B;
+    height: auto;
+    border-radius: 10px;
+}
+
+#wallet .modalContent__title {
+    height: 60px;
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    position: relative;
+}
+
+#wallet .title__text {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#wallet .title__btnClose {
+    position: absolute;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wallet .btnClose__img {
+    width: 25px;
+    height: 25px;
+}
+
+#wallet .modalContent__form {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+#wallet .form__boxInput {
+    background-color: #293A4E;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0px 0px 5px 0px;
+}
+
+#wallet .boxInput__label {
+    color: #B2B8D2;
+    font-weight: 700;
+    margin: 0px 0px 15px 0px;
+}
+
+#wallet .boxInput__input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+#wallet .boxInput__input.ipTA {
+    width: 100% !important;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+#wallet .boxInput__blockSl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+#wallet .blockSl__selectAccount {
+    background: #1B2A3B;
+    border-radius: 5px;
+    position: relative;
+    padding: 5px 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#wallet .selectAccount__dropdown {
+    width: 15px;
+    height: 15px;
+    margin: 0px 0px 0px 5px;
+}
+
+#wallet .selectAccount__check {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    opacity: 0;
+    z-index: 2;
+    margin: 0px;
+}
+
+#wallet .selectAccount__check:checked~.selectAccount__list {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+#wallet .selectAccount__check:checked~.selectAccount__dropdown {
+    transform: rotate(180deg);
+    transition: all 0.4s;
+}
+
+#wallet .boxInput__inputMoney {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: right;
+    width: 100px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wallet .selectAccount__itemSelect {
+    color: #FFF;
+    font-size: 0.9rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+#wallet .list__item {
+    padding: 10px 5px;
+    color: #FFF;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#wallet .selectAccount__list {
+    width: 150px;
+    height: auto;
+    max-height: 200px;
+    background: #1B2A3B;
+    border-radius: 5px;
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 32px;
+    left: 0;
+    z-index: 1;
+}
+
+#wallet .boxInput__btnCoppy {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    right: 25px;
+    margin: -2.5px 0px 0px 0px;
+    font-size: 0.85rem;
+    color: #B2B8D2;
+}
+
+#wallet .form__boxQr {
+    width: 180px;
+    height: 180px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+#wallet .boxQr__img {
+    width: 170px;
+    height: 170px;
+}
+
+#wallet .form__boxInfoWithdraw {
+    width: 100%;
+    margin: 15px 0px 0px 0px;
+}
+
+#wallet .boxInfoWithdraw__item {
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#wallet .item__label {
+    color: #B2B8D2;
+    font-size: 0.9rem;
+}
+
+#wallet .item__number {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+#wallet .form__btn {
+    margin: 15px 0px 0px 0px;
+    width: 100%;
+}
+
+#wallet .btn__text {
+    height: 45px;
+    width: 100%;
+    background-color: #148DFD;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: all 0.4s;
+}
+
+#wallet .btn__text:hover {
+    filter: brightness(0.8);
+    transition: all 0.4s;
+}
+
+#wallet .form__note {
+    margin: 25px 0px 0px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#wallet .note__text {
+    color: #E19049;
+    font-weight: 600;
+}
+
+#wallet .note__link {
+    margin: 15px 0px 10px 0px;
+}
+
+/* MAIN WALLET */
+
+#mainWallet {
+    width: 100%;
+}
+
+#mainWallet .blockWalletCoin {
+    width: 100%;
+    border-radius: 20px;
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 20px 0px;
+}
+
+#mainWallet .blockWalletCoin__header {
+    display: flex;
+    justify-content: space-between;
+    height: 42px;
+    width: 100%;
+    padding: 0px 10px;
+    align-items: center;
+    background-color: #293A4E;
+    border: 2px solid #394F68;
+}
+
+#mainWallet .header__currency {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#mainWallet .header__balance {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#mainWallet .header__tool {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#mainWallet .currency__text, #mainWallet .balance__text, #mainWallet .tool__text {
+    color: #FFF;
+    font-weight: 700;
+}
+
+#mainWallet .blockWalletCoin__listCoin {
+    border: 2px solid #394F68;
+    border-top: none;
+}
+
+#mainWallet .listCoin__item {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #1B2A3B;
+    padding: 0px 5px 0px 10px;
+}
+
+#mainWallet .listCoin__item:hover {
+    background-color: #172432;
+}
+
+#mainWallet .listCoin__item:first-child {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+#mainWallet .listCoin__item:last-child {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#mainWallet .item__nameCoin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#mainWallet .nameCoin__img {
+    width: 25px;
+    height: 25px;
+    margin: 0px 10px 0px 0px;
+}
+
+#mainWallet .nameCoin__text {
+    color: #FFF;
+    font-weight: 700;
+}
+
+#mainWallet .item__nameCoin {
+    width: 20%;
+}
+
+#mainWallet .item__balance {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#mainWallet .balance__number {
+    color: #FFF;
+    font-weight: 600;
+}
+
+#mainWallet .item__listTool {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 0px 0px 10px;
+}
+
+#mainWallet .btnTool {
+    border: none;
+    outline: none;
+    color: #FFF;
+    padding: 0px 15px;
+    height: 30px;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin: 0px 2.5px;
+    transition: all 0.4s;
+}
+
+#mainWallet .btnTool:hover {
+    filter: brightness(0.85);
+    transition: all 0.4s;
+}
+
+#mainWallet .btnDeposit {
+    background-color: #1182A2;
+}
+
+#mainWallet .btnWithdraw {
+    background-color: #D8143C;
+}
+
+#mainWallet .btnConvert {
+    background-color: #148DFD;
+}
+
+#mainWallet .blockTransHistory {
+    width: 100%;
+    border-radius: 20px;
+    padding: 0px 0px 10px 0px;
+}
+
+#mainWallet .blockTransHistory__header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+#mainWallet .blockTransHistory__header .title__text {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#mainWallet .header__filter {
+    display: flex;
+    flex-direction: row;
+}
+
+#mainWallet .filter__currency {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0px 2.5px;
+    background-color: #394F68;
+    height: 30px;
+    border-radius: 8px;
+}
+
+#mainWallet .currencySelect__item {
+    padding: 0px 10px 0px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mainWallet .currency__input {
+    position: absolute;
+    opacity: 0;
+}
+
+#mainWallet .currency__showList {
+    width: 18px;
+    height: 18px;
+    transition: all 0.4s;
+}
+
+#mainWallet .currency__input {
+    width: 100%;
+    height: 30px;
+}
+
+#mainWallet .currencySelect__item .item__text {
+    margin: 0px 5px 0px 0px;
+}
+
+#mainWallet .currency__input:checked~.currencySelect__item .currency__showList {
+    transform: rotate(180deg);
+    transition: all 0.4s;
+}
+
+#mainWallet .currency__listItem {
+    visibility: hidden;
+    position: absolute;
+    background-color: #394F68;
+    min-width: 150px;
+    border-radius: 8px;
+    top: 35px;
+    right: 0px;
+    opacity: 0;
+    transition: all 0.4s;
+    box-shadow: 0px 4px 20px #0f13245c;
+}
+
+#mainWallet .currency__input:checked~.currency__listItem {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+#mainWallet .currency__item {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    width: 100%;
+}
+
+#mainWallet .currency__item:hover {
+    background-color: #293A4E;
+}
+
+#mainWallet .filter__type {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0px 2.5px;
+    background-color: #394F68;
+    height: 30px;
+    border-radius: 8px;
+}
+
+#mainWallet .typeSelect__item {
+    padding: 0px 10px 0px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mainWallet .type__input {
+    position: absolute;
+    opacity: 0;
+}
+
+#mainWallet .type__showList {
+    width: 18px;
+    height: 18px;
+    transition: all 0.4s;
+}
+
+#mainWallet .type__input {
+    width: 100%;
+    height: 30px;
+}
+
+#mainWallet .typeSelect__item .item__text {
+    margin: 0px 5px 0px 0px;
+}
+
+#mainWallet .type__input:checked~.typeSelect__item .type__showList {
+    transform: rotate(180deg);
+    transition: all 0.4s;
+}
+
+#mainWallet .type__listItem {
+    visibility: hidden;
+    position: absolute;
+    background-color: #394F68;
+    min-width: 150px;
+    border-radius: 8px;
+    top: 35px;
+    right: 0px;
+    opacity: 0;
+    box-shadow: 0px 4px 20px #0f13245c;
+    transition: all 0.4s;
+}
+
+#mainWallet .type__input:checked~.type__listItem {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+#mainWallet .type__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    cursor: pointer;
+    min-width: 100%;
+}
+
+#mainWallet .type__item:hover {
+    background-color: #293A4E;
+}
+
+#mainWallet .type__item:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#mainWallet .type__item:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#mainWallet .table__header {
+    background-color: #394F68;
+    border: 2px solid #394F68;
+}
+
+#mainWallet .table__content {
+    border: 2px solid #394F68;
+    border-top: none;
+}
+
+#mainWallet .table__header .header__item {
+    color: #FFF;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0px 10px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #293A4E;
+}
+
+#mainWallet .content__item {
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    color: #FFF;
+}
+
+#mainWallet .content__listItem {
+    background-color: #1B2A3B;
+}
+
+#mainWallet .content__listItem:hover {
+    background-color: #172432;
+}
+
+/* EXCHANGE WALLET */
+
+#exchangeWallet {
+    width: 100%;
+}
+
+#exchangeWallet .blockExchangeCoin {
+    width: 100%;
+    border-radius: 20px;
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 20px 0px;
+}
+
+#exchangeWallet .blockExchangeCoin__header {
+    display: flex;
+    justify-content: space-between;
+    height: 42px;
+    width: 100%;
+    padding: 0px 10px;
+    align-items: center;
+    background-color: #293A4E;
+    border: 2px solid #394F68;
+}
+
+#exchangeWallet .header__account {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#exchangeWallet .header__balance {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#exchangeWallet .header__tool {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#exchangeWallet .account__text, #exchangeWallet .balance__text, #exchangeWallet .tool__text {
+    color: #FFF;
+    font-weight: 700;
+}
+
+#exchangeWallet .blockExchangeCoin__listAccount {
+    border: 2px solid #394F68;
+    border-top: none;
+}
+
+#exchangeWallet .listAccount__item {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1B2A3B;
+    padding: 0px 5px 0px 10px;
+}
+
+#exchangeWallet .listAccount__item:hover {
+    background-color: #172432;
+}
+
+#exchangeWallet .item__nameAccount {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#exchangeWallet .nameAccount__boxUnit {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px 0px 0px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+}
+
+#exchangeWallet .demoAccount {
+    background-color: #394F68;
+}
+
+#exchangeWallet .liveAccount {
+    background-color: #148DFD;
+}
+
+#exchangeWallet .promotionAccount {
+    background-color: #22D291;
+}
+
+#exchangeWallet .boxUnit__unit {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0px 0px 0px 2px;
+}
+
+#exchangeWallet .nameAccount__text {
+    color: #FFF;
+    font-weight: 700;
+}
+
+#exchangeWallet .item__nameAccount {
+    width: 20%;
+}
+
+#exchangeWallet .item__balance {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#exchangeWallet .balance__number {
+    color: #FFF;
+    font-weight: 600;
+}
+
+#exchangeWallet .item__listTool {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 0px 0px 10px;
+}
+
+#exchangeWallet .btnTool {
+    border: none;
+    outline: none;
+    color: #FFF;
+    padding: 0px 15px;
+    height: 30px;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin: 0px 2.5px;
+}
+
+#exchangeWallet .btnTool:hover {
+    filter: brightness(0.85);
+    transition: all 0.4s;
+}
+
+#exchangeWallet .btnRefill {
+    background-color: #1182A2;
+}
+
+#exchangeWallet .btnConvert {
+    background-color: #148DFD;
+}
+
+#exchangeWallet .btnInternalTransfer {
+    background-color: #22D291;
+}
+
+#exchangeWallet .boxInputTool {
+    background-color: #293A4E;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#exchangeWallet .boxInputTool__input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 40px;
+    padding: 0px 10px;
+    color: #FFF;
+    width: 100%;
+}
+
+#exchangeWallet .boxInputTool__input::placeholder {
+    color: #888;
+}
+
+#exchangeWallet .boxInputTool__btn {
+    background-color: #148DFD;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    outline: none;
+    height: 40px;
+    padding: 0px 15px;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+#exchangeWallet .boxInputTool__btn:hover {
+    filter: brightness(0.85);
+    transition: 0.4s all;
+}
+
+#exchangeWallet .blockInternalTransHitory {
+    width: 100%;
+    border-radius: 20px;
+    padding: 0px 0px 10px 0px;
+}
+
+#exchangeWallet .blockInternalTransHistory__table {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+#exchangeWallet .blockInternalTransHitory__header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+#exchangeWallet .blockInternalTransHitory__header .title__text {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#exchangeWallet .table__header {
+    background-color: #394F68;
+    border: 2px solid #394F68;
+}
+
+#exchangeWallet .table__content {
+    border: 2px solid #394F68;
+    border-top: none;
+}
+
+#exchangeWallet .table__header .header__item {
+    color: #FFF;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0px 10px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #293A4E;
+}
+
+#exchangeWallet .content__item {
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    color: #FFF;
+}
+
+#exchangeWallet .content__listItem {
+    background-color: #1B2A3B;
+}
+
+#exchangeWallet .content__listItem:hover {
+    background-color: #172432;
+}
+
+/* ------------------------------ TAB TRADING -------------------------- */
+
+#trading .pageTrading {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    position: relative;
+}
+
+#trading .pageTrading__cbShowChat {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 9;
+    opacity: 0;
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+}
+
+#trading .pageTrading__cbShowChat:checked~.pageTrading__chat {
+    width: 300px;
+    opacity: 1;
+    background-color: #1B2A3B;
+    transition: all 0.4s;
+}
+
+#trading .pageTrading__cbShowChat:checked~.pageTrading__trading {
+    width: calc(100% - 300px);
+    transition: all 0.4s;
+}
+
+#trading .pageTrading__cbShowChat:checked~.pageTrading__trading .trading__title {
+    width: calc(100% - 375px);
+    padding: 0px 15px 0px 20px;
+    transition: all 0.4s;
+}
+
+#trading .pageTrading__cbShowChat:checked~.pageTrading__boxShowChat .boxShowChat__img {
+    background-image: url(../images/icons/icUnShowChat.png);
+    transition: all 0.4s;
+}
+
+#trading .pageTrading__cbShowChat:checked~.pageTrading__boxShowChat .boxShowChat__countMess {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+/* BOX SHOW CHAT */
+
+.pageTrading__boxShowChat {
+    position: absolute;
+    right: 20px;
+    z-index: 8;
+    width: 30px;
+    height: 30px;
+    background-color: #293A4E;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    transition: all 0.4s;
+}
+
+.pageTrading .boxShowChat__img {
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/icons/icShowChat.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.4s;
+}
+
+.pageTrading .boxShowChat__countMess {
+    background-color: #D8143C;
+    padding: 5px 5px;
+    border-radius: 5px;
+    position: absolute;
+    right: -7px;
+    top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.pageTrading .countMess__text {
+    font-size: 0.5rem;
+    color: #FFF;
+    font-weight: 500;
+    margin: -2px 0px 0px 0px;
+}
+
+/* TRADING */
+
+.pageTrading__trading {
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.pageTrading__trading .trading__title {
+    width: calc(100% - 75px);
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 75px 0px 20px;
+    position: relative;
+    justify-content: space-between;
+    background-color: #1B2A3B;
+    transition: all 0.4s;
+    z-index: 3;
+}
+
+.pageTrading__trading .name__text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.pageTrading__trading .title__info {
+    flex-direction: row;
+    display: flex;
+}
+
+.pageTrading__trading .info__item {
+    margin: 0px 20px 0px 0px;
+}
+
+.pageTrading__trading .info__item:last-child {
+    margin: 0px;
+}
+
+.pageTrading__trading .item__label {
+    color: #B2B8D2;
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin: 0px 0px 7.5px 0px;
+}
+
+.pageTrading__trading .item__number {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.pageTrading__trading .item__boxContent {
+    display: flex;
+    flex-direction: row;
+}
+
+.pageTrading__trading .boxContent__value {
+    background-color: #2C3A49;
+    padding: 6px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    margin: -2.5px 10px 0px 0px;
+}
+
+.pageTrading__trading .boxContent__value:last-child {
+    margin: -2.5px 0px 0px 0px;
+}
+
+.pageTrading__trading .value__circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin: 0px 5px 0px 0px;
+}
+
+.pageTrading__trading .up {
+    background-color: #02C076 !important;
+}
+
+.pageTrading__trading .down {
+    background-color: #D9304E !important;
+}
+
+.pageTrading__trading .balance {
+    background-color: #E19049 !important;
+}
+
+.pageTrading__trading .value__number {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.pageTrading__trading .clExpected {
+    color: #02C076;
+}
+
+.pageTrading__trading .trading__content {
+    padding: 0px 10px 0px 20px;
+    height: auto;
+    width: 100%;
+}
+
+.pageTrading__trading .chartTrading__chart {
+    width: calc(100% - 85px);
+    height: calc(100vh - 250px);
+    padding: 0px 15px 0px 0px;
+}
+
+.pageTrading__trading .content__chartTrading {
+    display: flex;
+    flex-direction: row;
+}
+
+.pageTrading__trading .chartTrading__listResult {
+    width: 80px;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.pageTrading__trading .listResult__blockResult {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px -2px 5px 0px;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.pageTrading__trading .listResult__blockResult:first-child {
+    margin: 10px -2px 5px 0px;
+}
+
+.pageTrading__trading .listResult__blockResult:last-child {
+    margin: 0px -2px 0px 0px;
+}
+
+.pageTrading__trading .blockResult__item {
+    margin: 0px 2px 2px 0px;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    border: 2px solid rgba(255, 255, 255, 0.55);
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.pageTrading__trading .blockResult__item:hover .item__code {
+    visibility: visible;
+}
+
+.pageTrading__trading .blockResult__item:hover {
+    border: 2px solid rgba(255, 255, 255, 0.99);
+    transition: all 0.4s;
+}
+
+.pageTrading__trading .item__code {
+    padding: 0px 10px;
+    height: 20px;
+    background-color: #FFF;
+    position: absolute;
+    bottom: -35px;
+    left: -35px;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #293A4E;
+    box-shadow: 0px 4px 20px #0f13245c;
+    font-size: 0.9rem;
+    font-weight: 600;
+    z-index: 15;
+}
+
+.pageTrading__trading .trading__bet {
+    height: 95px;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pageTrading__trading .bet__blockAmount {
+    width: 300px;
+    height: 85px;
+    background-color: #293A4E;
+    border-radius: 8px;
+    padding: 10px 0px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pageTrading__trading .blockAmount__form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pageTrading__trading .boxInput__label {
+    color: #B2B8D2;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: -5px 0px 10px 0px;
+}
+
+.pageTrading__trading .boxInput__input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #FFF;
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 0px 0px 0px 15px;
+}
+
+.pageTrading__trading .form__boxSelectAmount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 145px;
+    flex-wrap: wrap;
+}
+
+.pageTrading__trading .boxSelectAmount__item {
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 45px;
+    background-color: #1B2A3B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 2.5px 2.5px 1.25px 0px;
+    transition: all 0.4s;
+}
+
+.pageTrading__trading .boxSelectAmount__item:hover {
+    filter: brightness(0.85);
+    transition: all 0.4s;
+}
+
+.pageTrading__trading .item__value {
+    color: #FFF;
+    font-weight: 700;
+}
+
+.pageTrading__trading .form__boxInput {
+    width: 125px;
+    height: 40px;
+    position: relative;
+    margin: 0px 15px 0px 0px;
+}
+
+.pageTrading__trading .boxInput__unit {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.25rem;
+    position: absolute;
+    left: 0px;
+    top: 25px;
+}
+
+.pageTrading__trading .bet__blockSelectBet {
+    width: calc(100% - 310px);
+    height: 85px;
+    margin: 5px 0px 5px 0px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 9;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pageTrading__trading .blockSelectBet__infoTrans {
+    height: 100%;
+    padding: 10px;
+}
+
+.pageTrading__trading .blockSelectBet__listSelect {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #293A4E;
+    border-radius: 8px;
+    padding: 7.5px 10px;
+}
+
+.pageTrading__trading .listSelect__time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 5px 0px 0px 0px;
+}
+
+.pageTrading__trading .time__label {
+    color: #B2B8D2;
+    font-weight: 600;
+    margin: 0px 15px 0px 0px;
+}
+
+.pageTrading__trading .time__number {
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.pageTrading__trading .listSelect__listBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pageTrading__trading .listBtn__item {
+    width: calc(100% / 3 - 5px);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #FFF;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+
+.pageTrading__trading .listBtn__item:hover {
+    filter: brightness(0.85);
+    transition: all 0.4s;
+}
+
+.pageTrading__trading .listBtn__item.balance {
+    background-color: #E19049;
+}
+
+.pageTrading__trading .listBtn__item.high {
+    background-color: #02C076;
+}
+
+.pageTrading__trading .listBtn__item.low {
+    background-color: #D9304E;
+}
+
+.pageTrading__trading .listBtn__item.disabled {
+    background-color: #8e8d8d !important;
+}
+
+.pageTrading__trading .listBtn__item {
+    background-color: #808080;
+}
+
+.pageTrading__trading .blockSelectBet__infoTrans {
+    width: calc(100% - 50% - 10px);
+    height: 85px;
+    background-color: #293A4E;
+    border-radius: 8px;
+}
+
+.pageTrading__trading .profit__text {
+    color: #B2B8D2;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.pageTrading__trading .infoTrans__profit {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px 0px 0px 0px;
+}
+
+.pageTrading__trading .profit__number {
+    color: #22D291;
+    font-weight: 700;
+}
+
+.pageTrading__trading .infoTrans__progressBar {
+    padding: 20px 0px 5px 0px;
+}
+
+.pageTrading__trading .progressBar__progress {
+    width: 100%;
+    height: 12.5px;
+    background-color: #293A4E;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pageTrading__trading .progress__high {
+    background-color: #02C076;
+    width: 44%;
+    height: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: rgb(34, 210, 145) 0px 0px 5px;
+    transition: all 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pageTrading__trading .progress__balance {
+    background-color: #E19049;
+    width: 34%;
+    height: 10px;
+    box-shadow: rgb(225, 114, 73) 0px 0px 5px;
+    transition: all 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pageTrading__trading .progress__low {
+    background-color: #D9304E;
+    width: 32%;
+    height: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgb(225, 105, 96) 0px 0px 5px;
+    transition: all 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pageTrading__trading .progress__percent {
+    font-size: 0.9rem;
+    font-weight: 600;
+    position: absolute;
+    top: -20px;
+}
+
+.pageTrading__trading .progress__high .progress__percent {
+    color: #00B572;
+}
+
+.pageTrading__trading .progress__low .progress__percent {
+    color: #FF6960;
+}
+
+.pageTrading__trading .progress__balance .progress__percent {
+    color: #E19049;
+}
+
+/* CHAT */
+
+.pageTrading__chat {
+    width: 0px;
+    transition: all 0.8s;
+    height: 100vh;
+    z-index: 7;
+    opacity: 0.2;
+    position: relative;
+    box-shadow: 0px 4px 20px #0f13245c;
+    transition: 0.4s all;
+}
+
+.pageTrading__chat .chat__title {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 75px 0px 20px;
+    position: fixed;
+    justify-content: space-between;
+    background-color: #1B2A3B;
+    transition: all 0.4s;
+}
+
+.pageTrading__chat .name__text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.pageTrading__chat .chat__boxChat {
+    margin: 60px 0px 0px 0px;
+    padding: 0px 0px 10px 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100vh - 110px);
+}
+
+.pageTrading__chat .text {
+    color: #FFF;
+}
+
+/* MENU MOBI */
+
+/* MENU MOBI */
+
+.header__menuMobi {
+    height: auto;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 17;
+    top: 0;
+    left: 0;
+}
+
+.header__menuMobi .icMenu {
+    stroke: #FFF;
+    stroke-width: 3.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    position: absolute;
+    left: 15px;
+    z-index: 8;
+    top: calc((72.5px - 30px) / 2);
+}
+
+.header__menuMobi .menuMobi__select {
+    opacity: 0;
+    position: absolute;
+    z-index: 9;
+    width: 30px;
+    height: 30px;
+    top: calc((72.5px - 30px) / 2);
+    left: 15px;
+}
+
+.header__menuMobi .menuMobi__blockMenu {
+    width: 300px;
+    position: fixed;
+    left: 0px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 10;
+    transform: translateX(-300px);
+    background-color: #1B2A3B;
+    box-shadow: 0px 4px 20px #0f13245c;
+    transition: all 0.6s;
+    top: 0;
+}
+
+
+.header__menuMobi .menuMobi__select:checked~.icMenu .icMenu__item:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-25px);
+    will-change: transform;
+}
+
+.header__menuMobi .menuMobi__select:checked~.icMenu .icMenu__item:nth-child(1) {
+    transform: rotate(45deg) translate(5px, -5px);
+    will-change: transform;
+}
+
+.header__menuMobi .menuMobi__select:checked~.icMenu .icMenu__item:nth-child(3) {
+    transform: rotate(-45deg) translate(-15px, -5px);
+    will-change: transform;
+}
+
+.header__menuMobi .menuMobi__select:checked~.menuMobi__blockMenu {
+    transform: translateX(0px);
+    transition: all 0.6s;
+    will-change: transform;
+}
+
+.header__menuMobi .menuMobi__select:checked~.icMenu {
+    right: 15px;
+    left: unset;
+    stroke: #FFF;
+}
+
+.header__menuMobi .logo__img {
+    width: 70px;
+    /* height: 35px; */
+}
+
+.header__menuMobi .info__logo {
+    width: 100%;
+    padding: 10px 12.5px;
+    text-align: center;
+}
+
+.header__menuMobi .blockMenu__listPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__menuMobi .blockMenu__info {
+    padding: 45px 0px 0px 0px;
+    background: radial-gradient(black, transparent);
+}
+
+.header__menuMobi .info__user {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header__menuMobi .user__name {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.header__menuMobi .user__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0px 15px 0px 0px;
+}
+
+.header__menuMobi .listPage__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    padding: 0px 15px;
+    border-bottom: 0.25px solid #1B2A3B;
+}
+
+.header__menuMobi .listPage__item.active {
+    background-color: #293A4E;
+}
+
+.header__menuMobi .item__imgMenu {
+    width: 20px;
+    height: 20px;
+    margin: 0px 20px 0px 0px;
+}
+
+.header__menuMobi .item__textMenu {
+    color: #FFF;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 3px 0px 0px 0px;
+}
+
+.overlayMenu {
+    width: 100%;
+    height: 120vh;
+    position: absolute;
+    z-index: 14;
+    background-color: rgba(0, 0, 0, 0.85);
+    overflow: hidden;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+/* MODAL WIN  */
+.fade.in {
+    background-color: rgba(0, 0, 0, 0.65);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.modalWin {
+    width: 350px;
+}
+
+.modalWin .title__btnClose {
+    width: 30px;
+    height: 30px;
+    background-color: #888;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 10px;
+    top: 7.5px;
+    transition: all 0.6s;
+}
+
+.modalWin .btnClose__img {
+    width: 16px;
+    height: 16px;
+}
+
+.modalWin .title__btnClose:hover {
+    background-color: #000;
+    transition: all 0.6s;
+}
+
+.modalWin .boxContent__form {
+    width: 100%;
+    background-color: #FFF;
+    padding: 15px 0px 0px 0px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalWin .form__video {
+    height: 200px;
+    padding: 30px 0px;
+}
+
+.modalWin .form__info {
+    margin: 15px 0px 0px 0px;
+    padding: 35px 10px 15px 10px;
+    text-align: center;
+    width: 100%;
+    background-color: #1B2A3B;
+    border-radius: 65px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.modalWin .info__result {
+    color: #22D291;
+    font-weight: 800;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.modalWin .info__moneyCount {
+    color: #22D291;
+    font-weight: 900;
+    font-size: 1.6rem;
+    margin: 15px 0px 0px -10px;
+}
+
+.modalWin .info__btn {
+    margin: 25px 0px 0px 0px;
+}
+
+.modalWin .btn__close {
+    height: 50px;
+    outline: none;
+    border: none;
+    width: 90%;
+    color: #FFF;
+    font-weight: 700;
+    background-color: #293A4E;
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: all 0.6s;
+}
+
+.modalWin .btn__close:hover {
+    filter: brightness(1.2);
+    transition: all 0.6s;
+}
+
+/* MODAL LOSE  */
+
+.modalLose {
+    width: 350px;
+}
+
+.modalLose .title__btnClose {
+    width: 30px;
+    height: 30px;
+    background-color: #888;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 10px;
+    top: 7.5px;
+    transition: all 0.6s;
+}
+
+.modalLose .btnClose__img {
+    width: 16px;
+    height: 16px;
+}
+
+.modalLose .title__btnClose:hover {
+    background-color: #000;
+    transition: all 0.6s;
+}
+
+.modalLose .boxContent__form {
+    width: 100%;
+    background-color: #FFF;
+    padding: 15px 0px 0px 0px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalLose .form__video {
+    height: 200px;
+    padding: 30px 0px;
+}
+
+.modalLose .form__info {
+    margin: 15px 0px 0px 0px;
+    padding: 35px 10px 15px 10px;
+    text-align: center;
+    width: 100%;
+    background-color: #1B2A3B;
+    border-radius: 65px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.modalLose .info__result {
+    color: #FF6960;
+    font-weight: 800;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.modalLose .info__moneyCount {
+    color: #FF6960;
+    font-weight: 900;
+    font-size: 1.8rem;
+    margin: 15px 0px 0px -10px;
+}
+
+.modalLose .info__btn {
+    margin: 25px 0px 0px 0px;
+}
+
+.modalLose .btn__close {
+    height: 50px;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: #FFF;
+    font-weight: 700;
+    background-color: #293A4E;
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: all 0.6s;
+}
+
+.modalLose .btn__close:hover {
+    filter: brightness(1.5);
+    transition: all 0.6s;
+}
+
+.noResult {
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.blockPaginate .pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockPaginate .page-item .page-link {
+    background-color: #293A4E;
+    outline: none;
+    border: 1px solid #1B2A3B;
+    color: #FFF;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockPaginate .page-item .page-link {
+    background-color: #293A4E;
+    box-shadow: 0px 4px 20px #0f13245c;
+    margin: 0px 2.5px;
+    border-radius: 8px;
+}
+
+.blockPaginate .page-item.active .page-link {
+    background-color: #394F68;
+}
+
+.blockPaginate .page-item.disabled .page-link {
+    background-color: #CCC !important;
+    color: #888;
+}
+
+.blockPaginate .page-item .page-link:focus, .blockPaginate .page-item .page-link:hover {
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.blockPaginate .page-item .page-link:hover {
+    background-color: #293A4E;
+}
+
+.blockPaginate .page-item:first-child .page-link, .blockPaginate .page-item:last-child .page-link {
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    margin: 0px 7.5px;
+}
+
+/* BLOCK FOOTER WEB */
+.blockFooterWeb {
+    height: 75px;
+    background: transparent;
+}
+
+/* BLOCK DASHBOARD AMOUNT */
+
+.blockDashboardAmount {
+    width: 100%;
+}
+
+.blockDashboardAmount__info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.blockDashboardAmount .info__item {
+    width: calc(100% / 7 - 10px);
+    padding: 15px 20px;
+    background-color: #293A4E;
+    border-radius: 8px;
+}
+
+.blockDashboardAmount .item__label {
+    color: #B2B8D2;
+    font-weight: 600;
+    margin: 0px 0px 15px 0px;
+}
+
+.blockDashboardAmount .item__content {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.blockDashboardAmount .info__btn {
+    width: calc(100% / 6 - 10px);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blockDashboardAmount .btn__itemBtn {
+    width: 100%;
+    padding: 11px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: #00AA13;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.blockDashboardAmount .btn__itemLink {
+    width: 100%;
+    padding: 11px 15px;
+    background-color: #148DFD;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.blockDashboardAmount .btn__itemBtn:hover, .blockDashboardAmount .btn__itemLink:hover {
+    filter: brightness(90%);
+}
+
+.sticky {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.8s;
+    will-change: transition;
+}
+
+.contentSticky {
+    padding: 70px 0px 0px 0px;
+}
+
+.sticky+.contentSticky {
+    padding-top: 70px;
+}
+
+.tabNavigation .item__boxImg .boxImg__icPolicy {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 22.5px;
+    height: 22.5px;
+    transition: all 0.4s ease;
+    filter: brightness(0.6);
+}
+
+.tabNavigation .item__boxImg.active .boxImg__icPolicy {
+    filter: brightness(1.2);
+    transition: all 0.4s ease;
+}
+
+.tabNavigation .item__boxImg.active .boxImg__icPolicy {
+    background-image: url(../images/icons/icPolicyActive.png) !important;
+}
+
+#policy {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100vh - 70px);
+}
+
+#policy .title {
+    position: fixed;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1B2A3B;
+    width: calc(100% - 82.5px);
+    padding: 0px 20px;
+    z-index: 9;
+}
+
+#policy .title .title__text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#policy .content {
+    padding: 60px 20px 25px 20px;
+}
+
+#policy .content .accordion {
+    width: 100%;
+}
+
+#policy .accordion-ques {
+    width: 100%;
+    border-bottom: 1px dotted #28394D;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+#policy .content__textTitle {
+    display: flex;
+    color: #FFF;
+    font-weight: 700;
+    margin: 10px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#policy .accordion-ask {
+    display: none;
+}
+
+#policy .accordion-ques p {
+    font-size: 0.9rem;
+    line-height: 20px;
+    color: #B2B8D2;
+    overflow: hidden;
+    cursor: auto;
+}
+
+#policy .faq {
+    margin: 25px 0px 0px 0px;
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+
+#policy .ques {
+    margin: 0px;
+    padding: 10px 25px 10px 0px;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+#policy .ques::before {
+    content: "";
+    width: 16px;
+    height: 2px;
+    background-color: #FFF;
+    position: absolute;
+    right: 0px;
+    top: calc(35px / 2 - 3px);
+    transition: 0.4s;
+    border-radius: 99px;
+    transition-delay: 0.1s;
+}
+
+#policy .ques::after {
+    content: "";
+    width: 16px;
+    height: 2px;
+    background-color: #FFF;
+    position: absolute;
+    right: 0px;
+    top: calc(35px / 2 - 3px);
+    transform: rotate(90deg);
+    border-radius: 99px;
+    transition: 0.4s;
+}
+
+#policy .ques.active::before {
+    transform: rotate(180deg);
+    transition: 0.4s;
+    transition-delay: 0.1s;
+}
+
+#policy .ques.active::after {
+    transform: rotate(360deg);
+    transition: 0.4s;
+}
+
+/* HIDDEN SHOW RESULT MOBILE */
+.chartShowHiddenMB {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    margin: 5px;
+}
+
+.toogleShowHideResult {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.toogleShowHideOpenClose {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.toogleShowHideProfit {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.toogleShowHideChat {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.bgToogle {
+    background: #2C3A49;
+    width: 25px;
+    height: 10px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.circleToogle {
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    position: absolute;
+    transition: all 0.4s;
+    left: -4px;
+    z-index: 2;
+    background-color: #394F68;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 20px #0f13245c;
+}
+
+.toogleShowHideResult:checked~.bgToogle .circleToogle,
+.toogleShowHideOpenClose:checked~.bgToogle .circleToogle,
+.toogleShowHideProfit:checked~.bgToogle .circleToogle,
+.toogleShowHideChat:checked~.bgToogle .circleToogle {
+    left: 12px;
+    background-color: #02C076;
+    transition: all 0.2s;
+}
+
+.toogleShowHideResult:checked~.bgToogle,
+.toogleShowHideOpenClose:checked~.bgToogle,
+.toogleShowHideProfit:checked~.bgToogle,
+.toogleShowHideChat:checked~.bgToogle {
+    background-color: #1fad76;
+    transition: all 0.2s;
+}
+
+.boxOC,
+.boxRS,
+.boxPF {
+    width: 25px;
+    height: 10px;
+    margin: 0px 20px 0px 0px;
+}
+
+.boxChat {
+    width: 20px;
+    height: 10px;
+    margin: 0px 17.5px 0px 0px;
+}
+
+.imgToogle {
+    width: 10px;
+    height: 10px;
+}
+
+.inputPD {
+    padding: 0px 0px 0px 135px;
+}
+
+.codeArea {
+    width: 125px;
+    height: 30px;
+    position: absolute;
+    top: 37.5px;
+    background-color: #293A4E;
+    border-radius: 5px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.codeArea .codeArea__check {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    margin: 0px;
+    z-index: 3;
+    opacity: 0;
+}
+
+.codeArea .codeArea__select {
+    color: #FFF;
+    z-index: 2;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0px 0px 0px 10px;
+}
+
+.codeArea .codeArea__icon {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 5px;
+    transition: all 0.4s;
+}
+
+.codeArea .codeArea__list {
+    position: absolute;
+    background-color: #293A4E;
+    width: 200px;
+    min-height: 45px;
+    max-height: 300px;
+    overflow-x: auto;
+    left: 0px;
+    top: 35px;
+    box-shadow: 0px 4px 20px #0f13245c;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+    padding: 45px 5px 5px 5px;
+    z-index: 1;
+}
+
+.codeArea .codeArea__check:checked~.codeArea__list {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.codeArea .list__item {
+    padding: 5px;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.codeArea .codeArea__check:checked~.codeArea__icon {
+    transform: rotate(180deg);
+    transition: all 0.4s;
+}
+
+.codeArea .codeArea__searchList {
+    width: calc(100% - 10px);
+    height: 30px;
+    background-color: transparent;
+    top: 10px;
+    position: absolute;
+    border: none;
+    z-index: 4;
+    outline: none;
+    display: none;
+    color: #FFF;
+    background-color: #1B2A3B;
+    padding: 5px 7.5px;
+    border-radius: 5px;
+}
+
+/* NOTI */
+.infoTabNavigation__header .tool__noti {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.infoTabNavigation__header .noti__input {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    opacity: 0;
+    z-index: 3;
+}
+
+.infoTabNavigation__header .noti__listNoti {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.4s;
+    background-color: #28394D;
+    max-height: 250px;
+    width: 350px;
+    top: 40px;
+    right: 10px;
+    z-index: 15;
+    border-radius: 8px;
+    overflow-y: auto;
+    box-shadow: 0px 4px 20px #0f13245c;
+    padding: 15px 0px 0px 0px;
+}
+
+.infoTabNavigation__header .noti__infoNoti {
+    width: 30px;
+    height: 30px;
+    background-color: #293A4E;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoTabNavigation__header .infoNoti__img {
+    width: 16px;
+    height: 16px;
+    transform: rotate(-45deg);
+    position: relative;
+    z-index: 2;
+}
+
+.infoTabNavigation__header .infoNoti__count {
+    background-color: #D8143C;
+    min-width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    position: absolute;
+    right: 2px;
+    top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.infoTabNavigation__header .count__number {
+    font-size: 0.6rem;
+    color: #FFF;
+    font-weight: 500;
+}
+
+.infoTabNavigation__header .noti__input:checked~.noti__listNoti {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.infoTabNavigation__header .listNoti__itemNoti {
+    padding: 12px 10px;
+    border-bottom: 0.25px solid rgba(178, 184, 210, 0.3);
+}
+
+.infoTabNavigation__header .itemNoti__text {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 0.85rem;
+    line-height: 16px;
+}
+
+.infoTabNavigation__header .itemNoti__time {
+    font-weight: 500;
+    font-size: 0.7rem;
+    color: #B2B8D2;
+    padding: 7.5px 0px 0px 0px;
+}
+
+.infoTabNavigation__header .listNoti__headerNoti {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infoTabNavigation__header .headerNoti__text {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.infoTabNavigation__header .headerNoti__readAll {
+    background: transparent;
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    z-index: 10;
+}
+
+.infoTabNavigation__header .readAll__img {
+    width: 18px;
+    height: 18px;
+}
+
+/* SELECT */
+.select__icDrop {
+    position: absolute;
+    top: calc((40px - 18px) / 2);
+    right: 10px;
+    background-image: url(../images/icons/icDropdown.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18px;
+    height: 18px;
+}
+
+/* WARNING WEB */
+.warningWeb {
+    position: fixed;
+    bottom: 30px;
+    background-color: #41556a;
+    z-index: 99;
+    left: 20px;
+    width: 400px;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px #0f13245c;
+    visibility: hidden;
+    opacity: 0
+}
+
+.warningWeb .warningWeb__content {
+    padding: 20px 15px 15px 15px;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.warningWeb .warningWeb__blockShowContent {
+    margin: 0px 0px 15px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.warningWeb .blockShowContent__text {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.warningWeb .blockShowContent__img {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.imgCheckShowContent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+}
+
+.warningWeb .blockShowContent__img:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+    transition: 0.3s;
+}
+
+.imgCheckShowContent:checked~.imgDrop {
+    transform: rotate(180deg);
+    transition: 0.4s;
+}
+
+.warningWeb .imgDrop {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.warningWeb .warningWeb__blockContent {
+    padding: 0px 0px 15px 0px;
+    display: block;
+}
+
+.warningWeb .blockContent__text {
+    color: #B2B8D2;
+    font-weight: 600;
+    line-height: 25px;
+    font-size: 0.9rem;
+}
+
+.warningWeb .closeWarning {
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    background-color: #FFB300;
+    color: #111;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.warningWeb .closeWarning:hover {
+    filter: brightness(1.1);
+    transition: 0.4s;
+}
+
+.upload__warning {
+    color: #FFF;
+    font-weight: 500;
+    list-style: 20px;
+    margin: 10px 0px 20px 0px;
+    font-size: 0.85rem;
+}
+
+/* GOLD COIN */
+.infoTabNavigation__header .tool__changeGoldCoin {
+    background-color: #293A4E;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+    margin: 0px 10px 0px 0px;
+}
+
+.infoTabNavigation__header .tool__changeGoldCoin.bgDisabledCoin {
+    background-color: #888;
+}
+
+.tool__changeGoldCoin .changeGoldCoin__img {
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    left: -4px;
+    top: -5px;
+}
+
+.slGoldCoin {
+    padding: 0px !important;
+}
+
+/* TREE LIST */
+.blockTree {
+    margin: 0px 20px 20px 20px;
+    padding: 20px 15px 10px 15px;
+    background-color: #28394D;
+    border-radius: 8px;
+}
+
+.blockTree .blockTree__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blockTree .title__text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.blockTree .title__totalTrade {
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: #1B2A3B;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #B2B8D2;
+}
+
+.blockTree .blockTree__content {
+    position: relative;
+    background-color: #28394D;
+    padding: 20px 0px;
+    min-width: 100%;
+    overflow-x: auto;
+}
+
+#listSearch {
+    background-color: #1B2A3B;
+    outline: none;
+    border: none;
+    min-width: 100%;
+    border-radius: 5px;
+    box-shadow: none;
+    height: 45px;
+    color: #FFF;
+}
+
+#listSearch::placeholder {
+    color: #B2B8D2;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.filter__list-wrap {
+    overflow-x: auto;
+}
+
+.filter__list-wrap::-webkit-scrollbar {
+    height: 3px;
+}
+
+.filter__list-wrap::-webkit-scrollbar-track {
+    background: #293A4E;
+}
+
+.filter__list-wrap::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.55);
+}
+
+.filter__tree {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    min-width: 1000px;
+}
+
+.filter__tree .filter__tree {
+    padding-left: 15px;
+    /* display: none;   Hidden Tree */
+}
+
+.filter__tree .filter__tree .filter__tree-item {
+    position: relative;
+}
+
+.filter__tree .filter__tree .filter__tree-item:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 2px;
+    background: #888;
+    left: -12px;
+    top: -1px;
+    transition: all 0.4s;
+}
+
+.filter__tree .filter__tree .filter__tree-item .filter__link:hover:before,
+.filter__tree .filter__tree .filter__tree-item .filter__link:focus:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 2px;
+    left: -12px;
+    top: -1px;
+    background-color: #FFF;
+    transition: all 0.4s;
+}
+
+.filter__link {
+    color: #FFF;
+    cursor: pointer;
+    background-color: #1B2A3B;
+    padding: 25px 15px;
+    margin: 0px 0px 5px 0px;
+    border-radius: 5px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+}
+
+.filter__link .link__text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.85rem;
+    min-width: calc((100% - 300px) / 4);
+    max-width: calc((100% - 300px) / 4);
+    line-height: 20px;
+    position: relative;
+}
+
+.filter__link .link__text:hover .link__note {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.filter__link .link__text.email {
+    min-width: 300px;
+    max-width: 300px;
+    white-space: nowrap;
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0px 0px 0px 2.5px;
+}
+
+.filter__link .link__text.f1 {
+    justify-content: flex-end;
+}
+
+.filter__link .email__upgrade {
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background-color: #05a063;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.filter__link .upgrade__img {
+    width: 12.5px;
+    height: 12.5px;
+}
+
+.filter__link .note__text {
+    font-size: 0.75rem;
+}
+
+.filter__link:hover {
+    transition: all 0.4s;
+    filter: brightness(1.15);
+}
+
+.filter__link.active {
+    filter: brightness(1.15);
+}
+
+.blockTree__content .content__item {
+    color: #FFF;
+    font-weight: 600;
+}
+
+/* FONT CHART */
+tspan {
+    font-weight: 600;
+}
+
+/* WARNING CHAT */
+.chat__warning {
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 18px;
+    padding: 0px 25px 25px 25px;
+}
+
+.chat__warning.fw {
+    padding: 25px;
+}
+
+/* VERIFY */
+.boxAvatar__avatar:hover .avatar__verifyCheck {
+    left: -1px;
+    transition: 0.6s;
+}
+
+.avatar__verifyCheck {
+    position: absolute;
+    left: -25px;
+    width: 25px;
+    height: 25px;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.6s;
+}
+
+.verifyCheck__img {
+    width: 18px;
+    height: 18px;
+}
+
+.notVerify {
+    border: 2.5px solid #FF6960;
+}
+
+.verifyPending {
+    border: 2.5px solid #E19049;
+}
+
+.verifySuccess {
+    border: 2.5px solid #02C076;
+}
+
+/* SLIDE ADS */
+.slideAds {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.slideAds .btnCloseSlide {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideAds .imgCloseSlide {
+    width: 30px;
+    height: 30px;
+}
+
+.slideAds .btnCloseSlide:hover {
+    background-color: #888;
+    transition: 0.4s;
+}
+
+.swiper-container {
+    width: 600px;
+    height: 400px;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    transition: 0.4s;
+    border-radius: 50%;
+    outline: none;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 0.9rem;
+    color: #FFF;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: #888;
+    transition: 0.4s;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #FFF;
+}
+
+.swiper-pagination-bullet {
+    background-color: #AAA;
+}
+
+/* LUCKY WHEEL */
+canvas {
+    z-index: 1;
+}
+
+.luckyWheelBlock {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    z-index: 9998;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+
+.luckyWheelWeb {
+    width: 600px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+    position: relative;
+    margin: 50px 0px 0px 0px;
+}
+
+.luckywheel {
+    width: 370px;
+    height: 370px;
+    position: absolute;
+    background: #4b6cb7;
+    background: -webkit-linear-gradient(to right, #2a4058, #324e8f);
+    background: linear-gradient(to right, #2a4058, #324e8f);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.45);
+    top: -65px;
+    left: -185px;
+}
+
+.luckywheel__spin {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.25);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    border-radius: 50%;
+    transition: all 0.4s;
+    animation: scaleSpin 1.5s linear infinite;
+}
+
+@keyframes scaleSpin {
+    0% {
+        transform: scale(1.0);
+    }
+
+    25% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.luckyWheelWeb .spinBtn {
+    width: 85px;
+    height: 85px;
+    background-color: #F02849;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-shadow: 0px 2px 5px rgba(242, 87, 103, 0.6);
+    letter-spacing: 0.2rem;
+}
+
+.luckyWheelWeb .luckywheel__spin:active {
+    transform: scale(0.9);
+    transition: all 0.4s;
+}
+
+.spinBtnOff {
+    transform: scale(0.9);
+    transition: all 0.4s;
+    background-color: #AFAFAF !important;
+    color: #707070 !important;
+    text-shadow: none !important;
+    pointer-events: none !important;
+}
+
+.luckywheel__spinOff {
+    pointer-events: none !important;
+    animation-play-state: paused !important;
+}
+
+.luckywheel__select {
+    position: absolute;
+    top: 0px;
+    right: -15px;
+    bottom: 0px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.luckywheel__bgSmall {
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    border: 10px solid rgba(0, 0, 0, 0.06);
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.luckywheel__bgBig {
+    position: absolute;
+    width: 345px;
+    height: 345px;
+    background: -webkit-linear-gradient(to right, #cea321, #d69130);
+    background: linear-gradient(to right, #cea321, #d69130);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.luckyWheelWeb .select__img {
+    width: 50px;
+    height: 50px;
+    transform: rotate(90deg);
+}
+
+.arrowSpinRunning {
+    animation: rotateArrow 0.2s linear infinite !important;
+}
+
+@keyframes rotateArrow {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    25% {
+        transform: rotate(100deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(80deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+.luckyWheelWeb .luckywheel__form {
+    width: 100%;
+    height: 100%;
+    background-color: #293A4E;
+    border-radius: 8px;
+}
+
+.luckyWheelWeb .content__title {
+    width: 100%;
+    background-color: #1B2A3B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px 15px 25%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.luckyWheelWeb .title__big {
+    font-size: 1.2rem;
+    color: #FCCD30;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0px 0px 7.5px 0px;
+}
+
+.luckyWheelWeb .title__small {
+    font-size: 0.9rem;
+    color: #0FC153;
+    font-weight: 700;
+}
+
+.luckyWheelWeb .content__img {
+    width: 100%;
+    height: 175px;
+    position: relative;
+}
+
+.luckyWheelWeb .img__item {
+    height: 150px;
+    position: absolute;
+    right: 115px;
+    top: 10px;
+}
+
+.luckyWheelWeb .history__title {
+    width: 100%;
+    background-color: #1B2A3B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin: 0px 0px 5px 0px;
+}
+
+.luckyWheelWeb .history__title {
+    color: #FCCD30;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.luckyWheelWeb .list__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30px;
+}
+
+.luckyWheelWeb .item__name {
+    color: #F2BE5F;
+    font-weight: 500;
+    font-size: 0.85rem;
+    width: 150px;
+    overflow: hidden;
+}
+
+.luckyWheelWeb .item__coin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 110px;
+    overflow: hidden;
+}
+
+.luckyWheelWeb .coin__img {
+    height: 20px;
+    margin: 0px 7.5px 0px 0px;
+}
+
+.luckyWheelWeb .coin__number {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.luckyWheelWeb .list__noItem {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.luckyWheelWeb .noItem__img {
+    height: 80px;
+    filter: grayscale(1);
+}
+
+.luckyWheelBlock .btnCloseLuckyWheel {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+.luckyWheelBlock .imgCloseLuckyWheel {
+    width: 30px;
+    height: 30px;
+}
+
+.luckyWheelBlock .btnCloseLuckyWheel:hover {
+    background-color: #888;
+    transition: 0.4s;
+}
+
+.luckyWheelBlock .luckyWheelResult {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.luckyWheelResult .luckyWheelResult__boxResult {
+    width: 280px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.45);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.luckyWheelResult .box__resultImg {
+    width: 100%;
+    background-color: #FDFDFD;
+    border-radius: 8px 8px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+}
+
+.luckyWheelResult .resultImg__img {
+    height: 200px;
+}
+
+.luckyWheelResult .box__resultContent {
+    width: 100%;
+    padding: 20px 0px 12.5px 0px;
+    background-color: #28394D;
+    border-radius: 0px 0px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.luckyWheelResult .resultContent__text {
+    color: #efc706;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.luckyWheelResult .resultContent__ok {
+    background-color: #1B2A3B;
+    width: 90%;
+    padding: 15px 10px;
+    margin: 15px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-weight: 800;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.luckyWheelResult .resultContent__ok:hover {
+    filter: brightness(0.85);
+}
+
+.tool__luckyWheel {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px 0px 0px;
+    cursor: pointer;
+}
+
+.luckyWheel__btnShow {
+    width: 30px;
+    height: 30px;
+    animation: scaleSpin 2s linear infinite;
+}

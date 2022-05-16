@@ -1,0 +1,150 @@
+.modalBalance {
+    width: 350px;
+}
+
+.modalBalance .title__btnClose {
+    width: 30px;
+    height: 30px;
+    background-color: #888;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 10px;
+    top: 7.5px;
+    transition: all 0.6s;
+}
+
+.modalBalance .btnClose__img {
+    width: 16px;
+    height: 16px;
+}
+
+.modalBalance .title__btnClose:hover {
+    background-color: #000;
+    transition: all 0.6s;
+}
+
+.modalBalance .boxContent__form {
+    width: 100%;
+    background-color: #FFF;
+    padding: 15px 0px 0px 0px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalBalance .form__video {
+    width: 250px;
+    height: 250px;
+}
+
+.modalBalance .form__info {
+    margin: 15px 0px 0px 0px;
+    padding: 35px 10px 15px 10px;
+    text-align: center;
+    width: 100%;
+    background-color: #1B2A3B;
+    border-radius: 65px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.modalBalance .info__result {
+    color: #D8DC14;
+    font-weight: 800;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.modalBalance .info__moneyCount {
+    color: #D8DC14;
+    font-weight: 900;
+    font-size: 1.8rem;
+    margin: 15px 0px 0px -10px;
+}
+
+.modalBalance .info__btn {
+    margin: 25px 0px 0px 0px;
+}
+
+.modalBalance .btn__close {
+    height: 50px;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: #FFF;
+    font-weight: 700;
+    background-color: #293A4E;
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: all 0.6s;
+}
+
+.modalBalance .btn__close:hover {
+    filter: brightness(1.5);
+    transition: all 0.6s;
+}
+
+.pageTrading__trading .infoTrans__progressBar {
+    padding: 15px 0px 5px 0px;
+}
+
+.pageTrading__trading .infoTrans__profit {
+    padding: 5px 0px 0px 0px;
+}
+
+.pageTrading__trading .profit__text {
+    font-size: 12px;
+}
+
+.chartTrading__chart {
+    background-image: url(../images/background/chart.png);
+    background-size: 80% 80%;
+    background-position: center 20px;
+    background-repeat: no-repeat;
+}
+
+#trading .item__boxResult {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#trading .boxResult__value {
+    margin: 0px 10px 0px 0px;
+    background-color: #2C3A49;
+    padding: 5px;
+    border-radius: 5px;
+    min-width: 125px;
+}
+
+#trading .value__number {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+    #trading .item__boxResult {
+        justify-content: space-between;
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 5px;
+        display: none;
+    }
+    #trading .boxResult__value {
+        width: calc(100% / 2 - 5px);
+        margin: 0px 0px 5px 0px;
+        min-width: unset;
+        padding: 7.5px 0px;
+        border-radius: 5px;
+    }
+}
